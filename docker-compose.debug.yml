@@ -11,3 +11,12 @@ services:
     build: ./back # build from Dockerfile in ./back
     volumes:
       - ./back:/app # mount the back directory so we can edit the code
+  # Proxy
+  proxy:
+    image: nginx:alpine
+    volumes:
+      - ./nginx/debug.conf:/etc/nginx/conf.d/default.conf 
+    ports:
+      - 8000:80
+    depends_on:
+      - front
