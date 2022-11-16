@@ -3,9 +3,11 @@ let app = express();
 
 const PORT = 3000;
 
-app.get('/', function (req, res) {
-    res.send('Here\'s where it all begins!');
-});
+// Include the routers
+let exampleRouter = require('./routers/example');
+
+// Use the routers
+app.use('/api', exampleRouter); // TODO currently bound to /api to mimic the nginx config
 
 app.listen(PORT, () => {
     console.log(`Eco RESTful API bound locally on port ${PORT}!`);
