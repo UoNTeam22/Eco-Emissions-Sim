@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  # Front-end
+  front:
+    build: ./front # build from Dockerfile in ./front
+    volumes:
+      - ./front:/app # mount the front directory so we can edit the code
+  # Back-end
+  back:
+    build: ./back # build from Dockerfile in ./back
+    volumes:
+      - ./back:/app # mount the back directory so we can edit the code
