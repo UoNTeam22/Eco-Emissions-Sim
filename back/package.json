@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/UoNTeam22/Eco-Emissions-Sim/issues"
   },
-  "homepage": "https://github.com/UoNTeam22/Eco-Emissions-Sim#readme"
+  "homepage": "https://github.com/UoNTeam22/Eco-Emissions-Sim#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
