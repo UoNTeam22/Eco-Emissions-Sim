@@ -20,7 +20,50 @@ This project was created as part of the [UoN](https://www.nottingham.ac.uk/) BSc
 The aim of the project was to create a web application that would allow users to calculate the affects that different emissions have on the environment around the world.
 
 ## Setup
-<!-- TODO: Add more information -->
+
+In this section, we will go over two possible setup senarios, one for development and one for production, however the general pre-requisites are the same for both:
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+> **Note:** Our testing is mostly done on GNU/Linux based systems so we cannot guarantee that the following instructions will work on all systems!
+
+### Production
+
+To run the application in production, you will simply need to run the following command:
+
+```bash
+docker-compose up -d --build
+```
+
+> **Note:** This will take a while to run the first time, as it will need to download and build all the images.
+
+Once the command has be ran, the application will start compiling the front-end and pass it to the nginx container, which will then serve it to the user.
+
+By default, the application will be available at [localhost](http://localhost), you can change the port that the application is served on by changing the `ports` section of the [`docker-compose.yml`](docker-compose.yml) file.
+
+You may want to adjust the [nginx configuration file](nginx/live.conf) to add better security settings for your given environment, such as:
+
+- [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- [SSL/TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security)
+- [Rate Limiting](https://en.wikipedia.org/wiki/Rate_limiting)
+
+> _These may be added in the future, but for now, they are not included in the default configuration._
+
+### Development
+
+To try and make the development process as painless as possible, we have included a [`docker-compose.debug.yml`](docker-compose.debug.yml) file, which will allow you to run the application in development mode that mimics the production environment but allows auto-reloading of the front-end.
+
+To run the application in development mode, you will need to run the following command:
+
+```bash
+docker-compose -f docker-compose.debug.yml up --build
+```
+> **Note:** You may like to attach to the compose to view the logs, alternatively you can use the `-d` flag to run the application in the background and view the logs with `docker-compose logs -f`.
+
+The default port for the application in development mode is `8000`, you can change this by changing the `ports` section of the [`docker-compose.debug.yml`](docker-compose.debug.yml) file, however it was chosen to be different to the production port to avoid any conflicts.
+
+> **Note:** The container may say that it is running on port `3000`, however this is only relevant to the container and not the host machine, the host machine will be running on the port specified in the [`docker-compose.debug.yml`](docker-compose.debug.yml) file.
 
 ## Contact
 If you have any questions, please feel free to make an [issue](https://github.com/UoNTeam22/Eco-Emissions-Sim/issues).
