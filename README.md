@@ -20,4 +20,4 @@ The aim of the project was to create a web application that would allow users to
 <!-- TODO: Add more information -->
 
 ## Contact
-If you have any questions, please feel free to make an issue.
+If you have any questions, please feel free to make an [issue](https://github.com/UoNTeam22/Eco-Emissions-Sim/issues).
