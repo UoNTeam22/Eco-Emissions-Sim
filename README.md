@@ -50,6 +50,12 @@ You may want to adjust the [nginx configuration file](nginx/live.conf) to add be
 
 > _These may be added in the future, but for now, they are not included in the default configuration._
 
+To stop the application, you can run the following command:
+
+```bash
+docker-compose down
+```
+
 ### Development
 
 To try and make the development process as painless as possible, we have included a [`docker-compose.debug.yml`](docker-compose.debug.yml) file, which will allow you to run the application in development mode that mimics the production environment but allows auto-reloading of the front-end.
@@ -64,6 +70,12 @@ docker-compose -f docker-compose.debug.yml up --build
 The default port for the application in development mode is `8000`, you can change this by changing the `ports` section of the [`docker-compose.debug.yml`](docker-compose.debug.yml) file, however it was chosen to be different to the production port to avoid any conflicts.
 
 > **Note:** The container may say that it is running on port `3000`, however this is only relevant to the container and not the host machine, the host machine will be running on the port specified in the [`docker-compose.debug.yml`](docker-compose.debug.yml) file.
+
+To close the application, you can simply press `Ctrl+C` to stop the application, or run the following command:
+
+```bash
+docker-compose -f docker-compose.debug.yml down
+```
 
 ## Contact
 If you have any questions, please feel free to make an [issue](https://github.com/UoNTeam22/Eco-Emissions-Sim/issues).
