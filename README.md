@@ -10,3 +10,14 @@
     <br>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL%203.0-02B302?style=flat"></a>
 </div>
+
+## This Project
+This project was created as part of the [UoN](https://www.nottingham.ac.uk/) BSc Computer Science year 2 group project, and is created and sponsored by [BJSS](https://bjss.com). 
+
+The aim of the project was to create a web application that would allow users to calculate the affects that different emissions have on the environment around the world.
+
+## Setup
+<!-- TODO: Add more information -->
+
+## Contact
+If you have any questions, please feel free to make an issue.
