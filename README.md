@@ -2,7 +2,7 @@
 <div align="center">
     <img src="assets/BJSS-Logo-Blue&Navy-RGB.svg" width="200" height="200" alt="Eco Emissions Simulator">
     <br>
-    <img src="https://img.shields.io/badge/-Node.js 3-3776AB?style=flat&logo=Node.js&logoColor=white" \>
+    <img src="https://img.shields.io/badge/-Node.js-3776AB?style=flat&logo=Node.js&logoColor=white" \>
     <img src="https://img.shields.io/badge/React.js-3776AB.svg?logo=react&amp;logoColor=white" \>
     <img src="https://img.shields.io/badge/Docker-3776AB.svg?logo=docker&amp;logoColor=white" \>
     <img src="https://img.shields.io/badge/Mocha-3776AB.svg?logo=Mocha&amp;logoColor=white" \>
