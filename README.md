@@ -8,6 +8,9 @@
     <img src="https://img.shields.io/badge/Mocha-3776AB.svg?logo=Mocha&amp;logoColor=white" \>
     <img src="https://img.shields.io/badge/Chai-3776AB.svg?logo=Chai&amp;logoColor=white" \>
     <br>
+    <img src="https://github.com/UoNTeam22/Eco-Emissions-Sim/actions/workflows/back-tests.yml/badge.svg">
+    <img src="https://github.com/UoNTeam22/Eco-Emissions-Sim/actions/workflows/front-tests.yml/badge.svg">
+    <br>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL%203.0-02B302?style=flat"></a>
 </div>
 
