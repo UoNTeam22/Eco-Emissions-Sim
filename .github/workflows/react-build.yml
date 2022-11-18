@@ -1,0 +1,13 @@
+name: React Build CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build the Docker image
+        run: docker build -t front front
+      - name: Build the React app
+        run: docker run front npm build -v $PWD/front/build:/app/build
