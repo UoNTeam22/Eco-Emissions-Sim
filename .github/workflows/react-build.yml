@@ -10,7 +10,7 @@ jobs:
       - name: Build the Docker image
         run: docker build -t front front
       - name: Build the React app
-        run: docker run front npm run build -v $PWD/front/build:/app/build
+        run: docker run -v $PWD/front/build:/app/build front npm run build
       - name: Export artifacts
         uses: actions/upload-artifact@v2
         with:
