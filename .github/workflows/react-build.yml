@@ -1,6 +1,10 @@
 name: React Build CI
 
-on: [push]
+# Main only
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
