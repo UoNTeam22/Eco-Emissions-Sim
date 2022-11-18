@@ -12,3 +12,7 @@ jobs:
       - name: Build the React app
         run: docker run front npm run build -v $PWD/front/build:/app/build
       - name: Export artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: react-build
+          path: front/build
