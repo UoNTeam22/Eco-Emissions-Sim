@@ -17,7 +17,13 @@
 ## This Project
 This project was created as part of the [UoN](https://www.nottingham.ac.uk/) BSc Computer Science year 2 group project, and is created and sponsored by [BJSS](https://bjss.com). 
 
-The aim of the project was to create a web application that would allow users to calculate the affects that different emissions have on the environment around the world.
+The aim of the project was to create a web application that would allow users to calculate the affects that different emissions have on the environment around the world. It does this by using a hand made climate change model for extrapolating the affects of different emissions on the environment. The user will be able to see potential affects on sea levels, temperature, CO2 levels, and more.
+
+We plan to include a number of different factors that affect the environment, such as:
+    - Fossil Fuels
+    - Vegetarianism / Veganism
+    - Public Transport
+    - Recycling
 
 ## Setup
 
