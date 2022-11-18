@@ -10,4 +10,5 @@ jobs:
       - name: Build the Docker image
         run: docker build -t front front
       - name: Build the React app
-        run: docker run front npm build -v $PWD/front/build:/app/build
+        run: docker run front npm run build -v $PWD/front/build:/app/build
+      - name: Export artifacts
