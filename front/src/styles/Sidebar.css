@@ -8,18 +8,14 @@
 }
 
 .sidebar {
-    top: 0;
-    left: 0;
-    bottom: 0;
     width: var(--sidebar-width);
     background-color: var(--side-bar-background-color);
 
-    /* This is terrible lol */
+    /* This is terrible */
     height: calc(100% - var(--nav-bar-height));
-    margin-top: calc(var(--nav-bar-height) + 1px); /* it looks like it is a pixel out */
 
     position: fixed;
-    top: 0;
+    top: auto;
     left: 0;
     bottom: 0;
 }
