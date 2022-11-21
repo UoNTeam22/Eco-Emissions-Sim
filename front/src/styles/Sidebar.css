@@ -24,17 +24,18 @@
 }
 
 .sidebar>.sidebar_body>.apply_button {
-    position: relative;
-    bottom: 0;
-    left: 0;
     width: auto;
     height: auto;
-    background: #A0FF66;
+    background-color: #A0FF66;
     border: 2.5px solid black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: black;
+    text-align: center;
     font-size: 1.5vh;
+}
+
+.sidebar>.sidebar_body>.apply_button>a:link {
+    text-decoration: none;
+}
+
+.sidebar>.sidebar_body>.apply_button:hover {
+    background-color: #71ff1a;
 }

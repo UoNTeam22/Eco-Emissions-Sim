@@ -10,7 +10,7 @@ class Sidebar extends Component {
             <div className="sidebar">
                 <div className="sidebar_body">
                     <div className="apply_button">
-                        <h1>Apply</h1>
+                        <a href="#"><h1>Apply</h1></a>
                     </div>
                 </div>
             </div >
