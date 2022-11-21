@@ -1,41 +1,73 @@
+:root {
+    --sidebar-width: 300px;
+    --apply-button-padding: 5px;
+    --side-bar-background-color: #475492;
+    --button-border-width: 2.5px;
+
+    --nav-bar-height: 85px;
+}
+
 .sidebar {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--sidebar-width);
+    background-color: var(--side-bar-background-color);
+
+    /* This is terrible lol */
+    height: calc(100% - var(--nav-bar-height));
+    margin-top: calc(var(--nav-bar-height) + 1px); /* it looks like it is a pixel out */
+
     position: fixed;
-    top: auto;
-    left: auto;
-    width: 35vh;
-    height: 100vh;
-    background: #475492;
-    border-right: 2.5px solid black;
-    overflow-y: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .sidebar>.body {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: auto;
-    /* Change height to dynamic */
-    height: 90vh;
-    /* background-color: white; */
+    min-width: var(--sidebar-width);
+}
+
+.sidebar>.body>*>.button {
+    cursor: pointer;
+}
+
+.sidebar>.body>*>.button {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    user-select: none;
+}
+
+.sidebar >.body > * >.button.apply:hover {
+    background-color: #A0FF66; 
+    /* TODO add transition */
+}
+
+.sidebar > .body > * > .button.apply {
+    background-color: #71ff1a;
+    border: var(--button-border-width) solid black;
+    text-align: center;
+
+    margin: var(--apply-button-padding);
+
+    width: 80%;
+    height: 60px;
+}
+
+.sidebar > .body > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    
+    /* Make the button appear at the bottom */
     flex-direction: column;
     justify-content: flex-end;
-    margin: 1vh;
-}
-
-.sidebar>.body>.button>a:link {
-    text-decoration: none;
-}
-
-.sidebar>.body>.button.apply:hover {
-    background-color: #71ff1a;
-}
-
-.sidebar>.body>.button.apply {
-    width: auto;
-    height: auto;
-    background-color: #A0FF66;
-    border: 2.5px solid black;
-    text-align: center;
-    font-size: 1.5vh;
+    align-items: center;
 }
