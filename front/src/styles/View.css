@@ -1,0 +1,26 @@
+.view {
+    position: fixed;
+    top: auto;
+    left: 35vh;
+    /* Width needs to be fixed */
+    width: 168vh;
+    height: 100vh;
+    background: #88A2C4;
+    border-left: 2.5px solid black;
+    overflow-y: auto;
+}
+
+.view>.view_body {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    /* Change height to dynamic */
+    height: 87vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid black;
+    margin: 2vh;
+}
