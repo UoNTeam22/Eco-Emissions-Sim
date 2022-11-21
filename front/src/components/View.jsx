@@ -8,7 +8,7 @@ class View extends Component {
     render() {
         return (
             <div className="view">
-                <div className="view_body">
+                <div className="body">
                     <h1>image</h1>
                 </div>
             </div>

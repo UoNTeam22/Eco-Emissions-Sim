@@ -10,7 +10,7 @@
     overflow-y: auto;
 }
 
-.view>.view_body {
+.view > .body {
     position: relative;
     top: auto;
     left: auto;
