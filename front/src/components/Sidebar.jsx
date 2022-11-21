@@ -8,10 +8,12 @@ class Sidebar extends Component {
     render() {
         return (
             <div className="sidebar">
-                <div className="apply_button">
-                    <h1>Apply</h1>
+                <div className="sidebar_body">
+                    <div className="apply_button">
+                        <h1>Apply</h1>
+                    </div>
                 </div>
-            </div>
+            </div >
 
         );
     }

@@ -9,20 +9,32 @@
     overflow-y: auto;
 }
 
-.sidebar>.apply_button {
-    position: fixed;
+.sidebar>.sidebar_body {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    /* Change height to dynamic */
+    height: 90vh;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1vh;
+}
+
+.sidebar>.sidebar_body>.apply_button {
+    position: relative;
     bottom: 0;
     left: 0;
-    width: 35vh;
-    height: 7.5vh;
+    width: auto;
+    height: auto;
     background: #A0FF66;
-    border-top: 2.5px solid black;
-    border-right: 2.5px solid black;
+    border: 2.5px solid black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     color: black;
     font-size: 1.5vh;
-    /* margin: 1vh; */
 }
