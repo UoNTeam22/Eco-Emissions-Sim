@@ -14,3 +14,25 @@
     font-size: 1.5vh;
     padding-left: 1vw;
 }
+
+.navbar>.navbar_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar>.navbar_links>div {
+    background-color: #CAF0F6;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.navbar>.navbar_links>div>a:link {
+    text-decoration: none;
+}
+
+.navbar>.navbar_links>div:hover {
+    background-color: #A8DADC;
+}
