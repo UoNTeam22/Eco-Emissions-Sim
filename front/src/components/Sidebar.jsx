@@ -1,6 +1,9 @@
 // Sidebar component
 
 import React, { Component } from 'react';
+
+
+import ApplyButton from './ApplyButton.jsx';
 import '../styles/Sidebar.css';
 
 class Sidebar extends Component {
@@ -11,15 +14,20 @@ class Sidebar extends Component {
                 <div className="body">
                     {/* TODO add a button component */}
                     <div className="overlay">
-                        <div className="button apply">
-                            {/* TODO add JS click event */}
-                            <h1>Apply</h1>
-                        </div>
+                        <ApplyButton onClick={this.applyChanges} text="Apply"/>
                     </div>
                 </div>
             </div >
 
         );
+    }
+
+    /**
+     * Triggered when the apply button is clicked
+     */
+    async applyChanges() {
+        // TODO implement this
+        console.log('apply changes');
     }
 }
 
