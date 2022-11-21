@@ -10,7 +10,7 @@ class Navbar extends Component {
             <div className="navbar">
                 <h1>Eco Emissions Sim</h1>
                 {/* <div class="navbar_logo"></div> */}
-                <div className="navbar_links">
+                <div className="links">
                     <div>
                         <a href="#">Graphs</a>
                     </div>

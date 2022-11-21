@@ -15,13 +15,13 @@
     padding-left: 1vw;
 }
 
-.navbar>.navbar_links {
+.navbar>.links {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.navbar>.navbar_links>div {
+.navbar>.links>div {
     background-color: #CAF0F6;
     width: 100px;
     margin: 10px;
@@ -29,10 +29,10 @@
     font-size: 30px;
 }
 
-.navbar>.navbar_links>div>a:link {
+.navbar>.links>div>a:link {
     text-decoration: none;
 }
 
-.navbar>.navbar_links>div:hover {
+.navbar>.links>div:hover {
     background-color: #A8DADC;
 }
