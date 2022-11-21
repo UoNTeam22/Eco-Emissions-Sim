@@ -6,3 +6,9 @@ test('renders Title', () => {
   const linkElement = screen.getByText(/Eco Emissions Sim/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('renders apply button', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Apply/i);
+  expect(linkElement).toBeInTheDocument();
+})
