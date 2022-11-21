@@ -1,0 +1,28 @@
+.sidebar {
+    position: fixed;
+    top: auto;
+    left: auto;
+    width: 35vh;
+    height: 100vh;
+    background: #475492;
+    border-right: 2.5px solid black;
+    overflow-y: auto;
+}
+
+.sidebar>.apply_button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 35vh;
+    height: 7.5vh;
+    background: #A0FF66;
+    border-top: 2.5px solid black;
+    border-right: 2.5px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.5vh;
+    /* margin: 1vh; */
+}
