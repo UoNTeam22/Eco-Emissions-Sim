@@ -9,7 +9,7 @@
     overflow-y: auto;
 }
 
-.sidebar>.sidebar_body {
+.sidebar>.body {
     position: relative;
     top: auto;
     left: auto;
@@ -23,19 +23,19 @@
     margin: 1vh;
 }
 
-.sidebar>.sidebar_body>.apply_button {
+.sidebar>.body>.button>a:link {
+    text-decoration: none;
+}
+
+.sidebar>.body>.button.apply:hover {
+    background-color: #71ff1a;
+}
+
+.sidebar>.body>.button.apply {
     width: auto;
     height: auto;
     background-color: #A0FF66;
     border: 2.5px solid black;
     text-align: center;
     font-size: 1.5vh;
-}
-
-.sidebar>.sidebar_body>.apply_button>a:link {
-    text-decoration: none;
-}
-
-.sidebar>.sidebar_body>.apply_button:hover {
-    background-color: #71ff1a;
 }

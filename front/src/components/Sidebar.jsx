@@ -8,8 +8,9 @@ class Sidebar extends Component {
     render() {
         return (
             <div className="sidebar">
-                <div className="sidebar_body">
-                    <div className="apply_button">
+                <div className="body">
+                    {/* TODO add a button component */}
+                    <div className="button apply">
                         <a href="#"><h1>Apply</h1></a>
                     </div>
                 </div>
