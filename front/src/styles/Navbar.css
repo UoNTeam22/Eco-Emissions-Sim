@@ -1,0 +1,24 @@
+:root {
+    --project-logo-size: 125px;
+}
+
+.navbar {
+    background-color: #282c34;
+    min-height: 7.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    color: white;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+}
+
+.navbar>.h1 {
+    font-size: 1.5vh;
+    padding-left: 1vw;
+}
+
+.navbar>.navbar_links>.a {
+    padding-: 1vw;
+}
