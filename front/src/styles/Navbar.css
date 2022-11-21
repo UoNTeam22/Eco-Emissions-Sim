@@ -1,6 +1,7 @@
 .navbar {
     background-color: #282c34;
     min-height: 80px;
+    max-height: 80px;
     display: flex;
     flex-direction: row;
     align-items: baseline;

@@ -4,7 +4,7 @@
     --side-bar-background-color: #475492;
     --button-border-width: 2.5px;
 
-    --nav-bar-height: 85px;
+    --nav-bar-height: 80px;
 }
 
 .sidebar {
@@ -37,12 +37,12 @@
     user-select: none;
 }
 
-.sidebar >.body > * >.button.apply:hover {
-    background-color: #A0FF66; 
+.sidebar>.body>*>.button.apply:hover {
+    background-color: #A0FF66;
     /* TODO add transition */
 }
 
-.sidebar > .body > * > .button.apply {
+.sidebar>.body>*>.button.apply {
     background-color: #71ff1a;
     border: var(--button-border-width) solid black;
     text-align: center;
@@ -53,7 +53,7 @@
     height: 60px;
 }
 
-.sidebar > .body > .overlay {
+.sidebar>.body>.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@
     right: 0;
 
     display: flex;
-    
+
     /* Make the button appear at the bottom */
     flex-direction: column;
     justify-content: flex-end;
