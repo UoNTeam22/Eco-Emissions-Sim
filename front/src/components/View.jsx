@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import '../styles/View.css';
+import Map from './Map';
 
 class View extends Component {
     state = {}
@@ -9,7 +10,7 @@ class View extends Component {
         return (
             <div className="view">
                 <div className="body">
-                    <h1>image</h1>
+                    <Map />
                 </div>
             </div>
         );
