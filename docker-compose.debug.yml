@@ -6,11 +6,15 @@ services:
     build: ./front # build from Dockerfile in ./front
     volumes:
       - ./front:/app # mount the front directory so we can edit the code
+      - ./scripts/update-run.sh:/app/update-run.sh # mount the update-run script
+    command: "sh update-run.sh" # run the update-run script
   # Back-end
   back:
     build: ./back # build from Dockerfile in ./back
     volumes:
       - ./back:/app # mount the back directory so we can edit the code
+      - ./scripts/update-run.sh:/app/update-run.sh # mount the update-run script
+    command: "sh update-run.sh" # run the update-run script
   # Proxy
   proxy:
     image: nginx:alpine
