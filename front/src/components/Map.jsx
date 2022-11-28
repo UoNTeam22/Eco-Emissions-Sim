@@ -1,8 +1,5 @@
 // Map component
 import React, { Component } from 'react';
-import { MapContainer, GeoJSON } from "react-leaflet";
-import mapData from "./../data/countries.json";
-import "leaflet/dist/leaflet.css";
 
 class Map extends Component {
     state = {}
