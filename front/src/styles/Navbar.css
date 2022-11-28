@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #282c34;
+    min-height: 80px;
+    max-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    color: white;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+}
+
+.navbar>.h1 {
+    font-size: 1.5vh;
+    padding-left: 1vw;
+}
+
+.navbar>.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar>.links>div {
+    background-color: #CAF0F6;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.navbar>.links>div>a:link {
+    text-decoration: none;
+}
+
+.navbar>.links>div:hover {
+    background-color: #A8DADC;
+}

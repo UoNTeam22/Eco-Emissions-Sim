@@ -1,0 +1,29 @@
+.view {
+    position: fixed;
+    top: auto;
+    /* Width needs to be fixed */
+
+    /* This is a bit terrible */
+    width: calc(100% - 300px);
+    left: 300px;
+    height: 100%;
+
+    background: #88A2C4;
+    border-left: 2.5px solid black;
+    overflow-y: auto;
+}
+
+.view > .body {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    /* Change height to dynamic */
+    height: 87vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid black;
+    margin: 2vh;
+}
