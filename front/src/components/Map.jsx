@@ -23,7 +23,7 @@ class Map extends Component {
     render() {
         return (
             <React.Fragment>
-                <MapContainer style={{height: "80vh", width: "160vh"}} zoom={2} center={[0,0]}>
+                <MapContainer style={{height: "80vh", width: "75vw"}} zoom={2} center={[0,0]}>
                     <GeoJSON
                         style={this.countryStyle}
                         data={mapData.features}
