@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import '../styles/View.css';
 import Map from './Map';
+import TempMap from './TempMap';
 
 class View extends Component {
     state = {}
@@ -10,7 +11,7 @@ class View extends Component {
         return (
             <div className="view">
                 <div className="body">
-                    <Map />
+                    <TempMap />
                 </div>
             </div>
         );
