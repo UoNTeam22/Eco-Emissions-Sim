@@ -1,6 +1,6 @@
 import React from "react";
 
-const LoadMap = () => {
+const Loading = () => {
   return (
     <div
       style={{
@@ -23,4 +23,4 @@ const LoadMap = () => {
   );
 };
 
-export default LoadMap;
+export default Loading;

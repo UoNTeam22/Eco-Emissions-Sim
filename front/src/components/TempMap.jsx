@@ -1,28 +1,33 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
 import Map from "./Map";
+import LoadTemp from "./LoadTemp";
+import ColorKey from "./ColorKey";
+import KeyItems from "./Keys";
 
 const TempMap = () => {
-    
-    const [countries, setCountries] = useState([]);
+  
+  const [countries, setCountries] = useState([]);
 
-    const load = () => {
-    
-    };
+  const load = () => {
+    const loadTemp = new LoadTemp();
+    loadTemp.load((countries) => setCountries(countries));
+  };
 
-    useEffect(load, []);
+  useEffect(load, []);
 
-    return (
+  return (
     <div>
-        {countries.length === 0 ? (
+      {countries.length === 0 ? (
         <Loading />
-        ) : (
+      ) : (
         <div>
-            <Map countries={countries} />
+          <Map countries={countries} />
+          <ColorKey keyItems={[...KeyItems]} />
         </div>
-        )}
+      )}
     </div>
-    );
+  );
 };
 
 export default TempMap;

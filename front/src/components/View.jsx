@@ -2,7 +2,6 @@
 
 import React, { Component } from 'react';
 import '../styles/View.css';
-import Map from './Map';
 import TempMap from './TempMap';
 
 class View extends Component {
