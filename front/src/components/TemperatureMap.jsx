@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Loading from "./Loading";
 import Map from "./Map";
 import LoadTemp from "./LoadTemp";
 import ColorKey from "./ColorKey";
@@ -19,7 +18,16 @@ const TempMap = () => {
   return (
     <div>
       {countries.length === 0 ? (
-        <Loading />
+        <div
+          style={{
+            height: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Loading...
+      </div>
       ) : (
         <div>
           <Map countries={countries} />
