@@ -14,7 +14,7 @@ class Sidebar extends Component {
                 <div className="body">
                     {/* TODO add a button component */}
                     <div className="overlay">
-                        <ApplyButton onClick={this.applyChanges} text="Apply"/>
+                        <ApplyButton onClick={this.applyChanges} text="Apply" />
                     </div>
                 </div>
             </div >
