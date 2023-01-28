@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Slider website:
+// https://reactjsexample.com/range-slider-library-written-in-typescript-and-using-web-component-technologies/
+
 class Factor extends React.Component {
     state = {
         onClick: this.props.onClick || (() => { }),
