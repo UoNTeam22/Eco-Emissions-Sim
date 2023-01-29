@@ -7,24 +7,17 @@ import "../styles/Map.css";
 
 const Map = ({ countries }) => {
 
-  const mapStyle = {
-    fillColor: "white",
-    weight: 1,
-    color: "black",
-    fillOpacity: 1,
-  };
-
   const onEachCountry = (country, layer) => {
     layer.options.fillColor = country.properties.color;
     const name = country.properties.ADMIN;
-    const text = country.properties.text;
-    layer.bindPopup(`${name}: ${text}`);
+    const temperature = country.properties.temp;
+    layer.bindPopup(`${name}: ${temperature}`);
   };
 
   return (
     <MapContainer style={{ height: "80vh", width: "78vw"}} zoom={2} center={[20, 0]}>
       <GeoJSON
-        style={mapStyle}
+        className="map-style"
         data={countries}
         onEachFeature={onEachCountry}
       />
