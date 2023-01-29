@@ -1,4 +1,10 @@
-import KeyItem from "./KeyItem";
+class KeyItem {
+  constructor(title, color, bounds) {
+    this.title = title;
+    this.color = color;
+    this.bounds = bounds;
+  }
+}
 
 var keyItems = [
 
