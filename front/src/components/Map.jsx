@@ -10,7 +10,7 @@ const Map = ({ countries }) => {
   const onEachCountry = (country, layer) => {
     layer.options.fillColor = country.properties.color;
     const name = country.properties.ADMIN;
-    const temperature = country.properties.temp;
+    const temperature = country.properties.temperature;
     layer.bindPopup(`${name}: ${temperature}`);
   };
 

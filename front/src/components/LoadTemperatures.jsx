@@ -2,7 +2,7 @@ import papaparser from "papaparse";
 import keys from "./Keys";
 import countries from "../data/countries.json";
 
-class LoadTemp {
+class LoadTemperatures {
   dataURL =
     "https://gist.githubusercontent.com/KesarEra/96eb24121aa2a2ad5bbcc77c15ef3159/raw/10f84d5429f2831084eb24373659f34a95bda090/countries_temp";
 
@@ -15,21 +15,20 @@ class LoadTemp {
     papaparser.parse(this.dataURL, {
       download: true,
       header: true,
-      complete: (result) => this.#processTempData(result.data),
+      complete: (result) => this.#processTemperatureData(result.data),
     });
   };
 
-  #processTempData = (tempCountries) => {
+  #processTemperatureData = (temperatureCountries) => {
     for (let i = 0; i < this.mapCountries.length; i++) {
       const country = this.mapCountries[i];
-      const tempCountry = tempCountries.find(
-        (tempCountry) => country.properties.ISO_A3 === tempCountry.ISO3
+      const temperatureCountry = temperatureCountries.find(
+        (temperatureCountry) => country.properties.ISO_A3 === temperatureCountry.ISO3
       );
 
-      if (tempCountry != null) {
-        let temp = Number(tempCountry.Temperature);
-        country.properties.temp = temp;
-        country.properties.text = temp;
+      if (temperatureCountry != null) {
+        let temperature = Number(temperatureCountry.Temperature);
+        country.properties.temperature = temperature;
       }
       this.#setCountryColor(country);
     }
@@ -39,12 +38,14 @@ class LoadTemp {
 
   #setCountryColor = (country) => {
     const key = keys.find((keyItem) =>
-      keyItem.bounds(country.properties.temp)
+      keyItem.bounds(country.properties.temperature)
     );
 
-    if (key != null) country.properties.color = key.color;
+    if (key != null) {
+      country.properties.color = key.color;
+    }
   };
 
 }
 
-export default LoadTemp;
+export default LoadTemperatures;

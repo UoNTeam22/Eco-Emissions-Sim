@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Map from "./Map";
-import LoadTemp from "./LoadTemp";
+import LoadTemperature from "./LoadTemperatures";
 import ColorKey from "./ColorKey";
 import KeyItems from "./Keys";
 
-const TempMap = () => {
+const TemperatureMap = () => {
   
   const [countries, setCountries] = useState([]);
 
   const load = () => {
-    const loadTemp = new LoadTemp();
-    loadTemp.load((countries) => setCountries(countries));
+    const loadTemperature = new LoadTemperature();
+    loadTemperature.load((countries) => setCountries(countries));
   };
 
   useEffect(load, []);
@@ -38,4 +38,4 @@ const TempMap = () => {
   );
 };
 
-export default TempMap;
+export default TemperatureMap;
