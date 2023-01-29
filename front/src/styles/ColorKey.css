@@ -1,0 +1,15 @@
+.all-keys {
+    display: flex;
+    align-items: stretch;
+}
+
+.individual-key {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 1em;
+    height: 5vh;
+}

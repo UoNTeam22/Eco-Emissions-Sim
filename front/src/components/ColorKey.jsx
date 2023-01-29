@@ -1,26 +1,15 @@
 import React from "react";
+import "../styles/ColorKey.css";
 
 const ColourKey = ({ keyItems }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "stretch",
-      }}
-    >
+    <div className="all-keys">
       {keyItems.map((item) => (
         <div
           key={item.title}
+          className="individual-key"
           style={{
             backgroundColor: item.color,
-            flex: 1,
-            display: "flex",
-            alignItems: "center", // vertical
-            justifyContent: "center", // horiztontal
-            color: "black",
-            fontWeight: "bolder",
-            fontSize: "1em",
-            height: "5vh",
           }}
         >
           <span>{item.title}</span>

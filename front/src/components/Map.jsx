@@ -15,7 +15,7 @@ const Map = ({ countries }) => {
   };
 
   return (
-    <MapContainer style={{ height: "80vh", width: "78vw"}} zoom={2} center={[20, 0]}>
+    <MapContainer className="map-container" zoom={2} center={[20, 0]}>
       <GeoJSON
         className="map-style"
         data={countries}
