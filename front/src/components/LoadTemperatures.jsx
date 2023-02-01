@@ -2,17 +2,16 @@ import papaparser from "papaparse";
 import keys from "./Keys";
 import countries from "../data/countries.json";
 
-class LoadTemperatures {
-  dataURL =
-    "https://gist.githubusercontent.com/KesarEra/96eb24121aa2a2ad5bbcc77c15ef3159/raw/10f84d5429f2831084eb24373659f34a95bda090/countries_temp";
+const DATA_URL =  "https://gist.githubusercontent.com/KesarEra/96eb24121aa2a2ad5bbcc77c15ef3159/raw/10f84d5429f2831084eb24373659f34a95bda090/countries_temp";
 
+class LoadTemperatures {
   setState = null;
   mapCountries = countries.features;
 
   load = (setState) => {
     this.setState = setState;
 
-    papaparser.parse(this.dataURL, {
+    papaparser.parse(DATA_URL, {
       download: true,
       header: true,
       complete: (result) => this.#processTemperatureData(result.data),
