@@ -5,6 +5,7 @@ import countries from "../data/countries.json";
 const DATA_URL =  "https://gist.githubusercontent.com/KesarEra/96eb24121aa2a2ad5bbcc77c15ef3159/raw/10f84d5429f2831084eb24373659f34a95bda090/countries_temp";
 
 class LoadTemperatures {
+  /** setState is null until all the temperature data is processed. */
   setState = null;
   mapCountries = countries.features;
 
@@ -31,7 +32,7 @@ class LoadTemperatures {
       }
       this.#setCountryColor(country);
     }
-
+    /** Sets state once all countries are assigned a color according to their temperature & the key. */
     this.setState(this.mapCountries);
   };
 

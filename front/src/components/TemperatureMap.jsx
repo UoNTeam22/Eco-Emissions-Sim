@@ -13,6 +13,7 @@ const TemperatureMap = () => {
     loadTemperature.load((countries) => setCountries(countries));
   };
 
+  /** useEffect: Perform side effect for loading the correct country colors according to key. */
   useEffect(load, []);
 
   return (
