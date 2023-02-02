@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import '../styles/View.css';
-import Map from './Map';
+import TemperatureMap from './TemperatureMap';
 
 class View extends Component {
     state = {}
@@ -10,7 +10,7 @@ class View extends Component {
         return (
             <div className="view">
                 <div className="body">
-                    <Map />
+                    <TemperatureMap />
                 </div>
             </div>
         );

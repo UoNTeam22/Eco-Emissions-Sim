@@ -1,38 +1,29 @@
 // Map component
-import React, { Component } from 'react';
+
+import React from "react";
 import { MapContainer, GeoJSON } from "react-leaflet";
-import mapData from "./../data/countries.json";
 import "leaflet/dist/leaflet.css";
-import "./../styles/Map.css";
+import "../styles/Map.css";
 
-class Map extends Component {
-    state = {}
+const Map = ({ countries }) => {
 
-    countryStyle = {
-        fillColor: "red",
-        fillOpacity: 1,
-        color: "black",
-        weight: 1,
-    };
+  const onEachCountry = (country, layer) => {
+    layer.options.fillColor = country.properties.color;
+    const name = country.properties.ADMIN;
+    const temperature = country.properties.temperature;
+    layer.bindPopup(`${name}: ${temperature}`);
+  };
 
-    onEachFeature = (country, layer) => {
-        const countryName = country.properties.ADMIN;
-        layer.bindPopup(countryName);
-    }
+  return (
+    <MapContainer className="map-container" zoom={2} center={[20, 0]}>
+      <GeoJSON
+        className="map-style"
+        data={countries}
+        onEachFeature={onEachCountry}
+      />
+    </MapContainer>
+  );
 
-    render() {
-        return (
-            <React.Fragment>
-                <MapContainer style={{height: "80vh", width: "75vw"}} zoom={2} center={[0,0]}>
-                    <GeoJSON
-                        style={this.countryStyle}
-                        data={mapData.features}
-                        onEachFeature={this.onEachFeature}
-                    />
-                </MapContainer>
-            </React.Fragment>
-        );
-    }
-}
+};
 
 export default Map;
