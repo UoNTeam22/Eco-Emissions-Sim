@@ -66,4 +66,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+
+    /* Idk if this is gonna cause issues in the future but it works for now at least ;) */
+    z-index: -1;
 }
