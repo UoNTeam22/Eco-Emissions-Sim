@@ -5,7 +5,7 @@ import '../styles/View.css';
 import TemperatureMap from './TemperatureMap';
 import SimpleWrappedSlider from './SimpleWrappedSlider.jsx';
 
-class View extends Component {
+export class Time extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -46,12 +46,41 @@ class View extends Component {
         return this.state.value;
     }
 
+
+    render() {
+        return (
+            <div className="time">
+                <div className="name">{this.state.name}</div>
+                {this.renderInput()}
+            </div>
+        )
+    }
+}
+
+export class Times extends Component {
+    state = {}
+
+    // This is a placeholder as an example
+    render() {
+        return (
+            <div className="times">
+                <Time name="TimeScaler" value={900} rangeStart={0} rangeEnd={2050} onChange={console.log} />
+            </div>
+        )
+    }
+}
+
+class View extends Component {
+    state = {}
+
     render() {
         return (
             <div className="view">
                 <div className="body">
                     <TemperatureMap />
-                    {this.renderInput()}
+                </div>
+                <div className="footer">
+                    <Times />
                 </div>
             </div>
         );
