@@ -109,3 +109,6 @@ shared_static
 # Copied Scripts
 back/update-run.sh
 front/update-run.sh
+
+# Pycache
+__pycache__/
