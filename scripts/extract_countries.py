@@ -241,7 +241,7 @@ data = data.replace('The model of ', '')
 names = data.split('\n')
 
 # Remove the stuff after the colon
-names = [name.split(':')[0] for name in names]
+names = [':'.join(name.split(':')[:-1]) for name in names]
 
 # For some reason, the thing after the comma should be before the comma
 for i in range(len(names)):
