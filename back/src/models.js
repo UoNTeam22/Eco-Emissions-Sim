@@ -1,4 +1,18 @@
 const fs = require('fs');
+const path = require('path');
+
+function openJsonData(filepath) {
+    let dataPath = './data';
+
+    // Make JSON file path absolute
+    dataPath = path.resolve(__dirname, dataPath);
+
+    // Get the JSON file path
+    let jsonPath = path.join(dataPath, filepath);
+
+    // Read the countries from the JSON file
+    return JSON.parse(fs.readFileSync(jsonPath));
+}
 
 class Country {
     #name = '';
@@ -16,13 +30,8 @@ class Country {
     }
 
     static get all() {
-        const JSON_PATH = './data/countries.json';
-
-        // Read the countries from the JSON file
-        let data = fs.readFileSync(JSON_PATH);
-
         // Parse the JSON data
-        let countries = JSON.parse(data);
+        let countries = openJsonData('countries.json');
 
         // Convert the countries to Country objects
         let converted = [];
@@ -95,3 +104,75 @@ class Model {
         return this._calculate(country, options);
     }
 }
+
+class ChangeTemperatureTimeModel extends Model {
+    constructor() {
+        super({
+            'time': 0
+        });
+    }
+
+    _calculate(country, options) {
+        let {time} = options;
+
+        // Get the country coefficients
+        let coefs = ChangeTemperatureTimeModel.getCountryCoefs(country);
+
+        if (!coefs) {
+            throw new Error(`No coefficients found for country: ${country}`);
+        }
+
+        // y = mx + c
+
+        // Where:
+
+        // y is the temperature in change degrees Celsius
+        // x is the year (so 1997, 2025, 2050, etc.)
+
+        // m is a coefficient related to the country
+        // c is an obituary constant
+
+        // What we now
+        const m = coefs['xYearCoef'];
+        const c = coefs['const'];
+        let x = time;
+
+        // What we want
+        let y = (m * x) + c;
+
+        return y;
+    }
+
+    _validateOptions(options) {
+        let {time} = options;
+
+        // Ensure that time isn't negative
+        if (time < 0) {
+            return false;
+        }
+
+        return true;
+    }
+
+    static get coefs() {
+        return openJsonData('models/temperature-change-at-year.json');
+    }
+
+    static getCountryCoefs(country) {
+        // Get the country name
+        let name = country.name;
+
+        // Search the coefficients for the country
+        let coefs = this.coefs;
+
+        for (let coef of coefs) {
+            if (coef.country != name) continue;
+            
+            return coef;
+        }
+
+        return null;
+    }
+}
+
+module.exports = {Country, Model, ChangeTemperatureTimeModel};
