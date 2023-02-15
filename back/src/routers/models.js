@@ -106,7 +106,9 @@ router.get('/', (req, res) => {
     res.json(router.modelRegistry.overview);
 });
 
-router.get('/:modelId', (req, res) => {
+// For any /:modelId routes, get the model and set it on the request
+// This will validate that the model exists
+router.use('/:modelId', (req, res, next) => {
     // Get the model name
     let modelId = req.params.modelId;
 
@@ -119,11 +121,16 @@ router.get('/:modelId', (req, res) => {
         return;
     }
 
-    // Get the overview
-    let overview = router.modelRegistry.getModelOverview(modelId);
+    // Set the model
+    req.model = model;
 
+    // Continue
+    next();
+});
+
+router.get('/:modelId', (req, res) => {
     // Display the model overview
-    res.json(overview);
+    res.json(router.modelRegistry.getModelOverview(req.params.modelId));
 });
 
 // Export the router
