@@ -15,7 +15,7 @@ class ModelRegistry {
      * @param {Model} model the model to add #
      * @param {String} modelId the id of the model to add, defaults to the model's constructor name (however this may not be unique or RESTful)
      */
-    addModel(model, modelId = undefined) {
+    addModel(model, modelId) {
         // Check that the model is an instance of the Model class
         if (!(model instanceof Model)) {
             throw new Error('Model must be an instance of the Model class');
