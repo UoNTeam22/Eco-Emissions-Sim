@@ -7,6 +7,8 @@ chai.use(chaiHttp);
 const {app, server} = require('../index');
 
 describe('Models Router', () => {
+    const MODEL_ID = 'change-temperature-time';
+
     function testIsTemperatureModel(model) {
         model.should.have.property('name');
         model.should.have.property('params');
@@ -22,6 +24,10 @@ describe('Models Router', () => {
         // Check the name of the model
         model.name.should.be.a('string');
         model.name.should.equal('ChangeTemperatureTimeModel');
+
+        // Check the model id
+        model.id.should.be.a('string');
+        model.id.should.equal(MODEL_ID);
 
         // Make sure that there is only one param (for now)
         model.params.should.have.lengthOf(1);
@@ -49,7 +55,7 @@ describe('Models Router', () => {
         it('should return the model overview', async () => {
             let requester = chai.request(app);
 
-            let resp = await requester.get('/api/models/ChangeTemperatureTimeModel');
+            let resp = await requester.get('/api/models/' + MODEL_ID);
             requester.close();
 
             resp.should.have.status(200);
@@ -61,7 +67,7 @@ describe('Models Router', () => {
         it('should return a 404 if the model does not exist', async () => {
             let requester = chai.request(app);
 
-            let resp = await requester.get('/api/models/NonExistantModel');
+            let resp = await requester.get('/api/models/non-existent-model');
             requester.close();
 
             resp.should.have.status(404);

@@ -14,57 +14,58 @@ class ModelRegistry {
      * Adds a model to the registry
      * @param {Model} model the model to add 
      */
-    addModel(model) {
+    addModel(model, modelId = undefined) {
         // Check that the model is an instance of the Model class
         if (!(model instanceof Model)) {
             throw new Error('Model must be an instance of the Model class');
         }
 
         // Get the model name
-        let modelName = model.constructor.name;
+        modelId = modelId || model.constructor.name;
 
         // Check that we don't already have a model with this name
-        if (this.#models[modelName]) {
-            throw new Error(`Model ${modelName} is already registered`);
+        if (this.#models[modelId]) {
+            throw new Error(`Model ${modelId} is already registered`);
         }
 
-        this.#models[modelName] = model;
+        this.#models[modelId] = model;
     }
 
     /**
      * Removes a model from the registry
-     * @param {String} modelName the name of the model to remove
+     * @param {String} modelId the id of the model to remove
      */
-    removeModel(modelName) {
+    removeModel(modelId) {
         // Check that we have a model with this name
-        if (!this.#models[modelName]) {
-            throw new Error(`Model ${modelName} is not registered`);
+        if (!this.#models[modelId]) {
+            throw new Error(`Model ${modelId} is not registered`);
         }
 
-        delete this.#models[modelName];
+        delete this.#models[modelId];
     }
 
     /**
      * Gets a model from the registry
-     * @param {String} modelName the name of the model to get
+     * @param {String} modelId the name of the model to get
      * @returns {Model} the model or undefined if it doesn't exist
     */
-    getModel(modelName) {
-        return this.#models[modelName];
+    getModel(modelId) {
+        return this.#models[modelId];
     }
 
     getModelNames() {
         return Object.keys(this.#models);
     }
 
-    getModelOverview(modelName) {
-        let model = this.getModel(modelName);
+    getModelOverview(modelId) {
+        let model = this.getModel(modelId);
         if (!model) return model;
 
         let modelParams = model.paramNames;
         let modelOverview = {
-            name: modelName,
-            params: modelParams
+            name: model.constructor.name,
+            params: modelParams,
+            id: modelId
         };
 
         return modelOverview;
@@ -73,8 +74,8 @@ class ModelRegistry {
     get overview() {
         let overviews = [];
 
-        for (let modelName in this.#models) {
-            let overview = this.getModelOverview(modelName);
+        for (let modelId in this.#models) {
+            let overview = this.getModelOverview(modelId);
     
             // Ensure that we got an overview
             if (!overview) continue;
@@ -97,28 +98,28 @@ router.modelRegistry = new ModelRegistry();
 const {ChangeTemperatureTimeModel} = require('../models');
 
 // Register them
-router.modelRegistry.addModel(new ChangeTemperatureTimeModel());
+router.modelRegistry.addModel(new ChangeTemperatureTimeModel(), 'change-temperature-time');
 
 router.get('/', (req, res) => {
     // Display the model overview
     res.json(router.modelRegistry.overview);
 });
 
-router.get('/:modelName', (req, res) => {
+router.get('/:modelId', (req, res) => {
     // Get the model name
-    let modelName = req.params.modelName;
+    let modelId = req.params.modelId;
 
     // Get the model
-    let model = router.modelRegistry.getModel(modelName);
+    let model = router.modelRegistry.getModel(modelId);
 
     // Check that the model exists
     if (!model) {
-        res.status(404).send(`Model ${modelName} not found`);
+        res.status(404).send(`Model ${modelId} not found`);
         return;
     }
 
     // Get the overview
-    let overview = router.modelRegistry.getModelOverview(modelName);
+    let overview = router.modelRegistry.getModelOverview(modelId);
 
     // Display the model overview
     res.json(overview);
