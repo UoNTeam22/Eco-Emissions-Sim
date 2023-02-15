@@ -103,6 +103,10 @@ class Model {
         // Calculate the result
         return this._calculate(country, options);
     }
+
+    get paramNames() {
+        return Object.keys(this.#params);
+    }
 }
 
 class ChangeTemperatureTimeModel extends Model {

@@ -56,6 +56,35 @@ class ModelRegistry {
     getModelNames() {
         return Object.keys(this.#models);
     }
+
+    getModelOverview(modelName) {
+        let model = this.getModel(modelName);
+        if (!model) return model;
+
+        let modelParams = model.paramNames;
+        let modelOverview = {
+            name: modelName,
+            params: modelParams
+        };
+
+        return modelOverview;
+    }
+
+    get overview() {
+        let overviews = [];
+
+        for (let modelName in this.#models) {
+            let overview = this.getModelOverview(modelName);
+    
+            // Ensure that we got an overview
+            if (!overview) continue;
+
+            // Add it
+            overviews.push(overview);
+        }
+
+        return overviews;
+    }
 }
 
 // Create a router
@@ -71,9 +100,28 @@ const {ChangeTemperatureTimeModel} = require('../models');
 router.modelRegistry.addModel(new ChangeTemperatureTimeModel());
 
 router.get('/', (req, res) => {
-    // Return a list of the models
-    let modelNames = router.modelRegistry.getModelNames();
-    res.json(modelNames);
+    // Display the model overview
+    res.json(router.modelRegistry.overview);
+});
+
+router.get('/:modelName', (req, res) => {
+    // Get the model name
+    let modelName = req.params.modelName;
+
+    // Get the model
+    let model = router.modelRegistry.getModel(modelName);
+
+    // Check that the model exists
+    if (!model) {
+        res.status(404).send(`Model ${modelName} not found`);
+        return;
+    }
+
+    // Get the overview
+    let overview = router.modelRegistry.getModelOverview(modelName);
+
+    // Display the model overview
+    res.json(overview);
 });
 
 // Export the router
