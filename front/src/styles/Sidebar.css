@@ -24,19 +24,6 @@
     min-width: var(--sidebar-width);
 }
 
-.sidebar>.body>.slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-}
-
-.name {
-    height: 30px;
-    font-size: large;
-    font-weight: bold;
-}
-
 .sidebar>.body>*>.button {
     cursor: pointer;
 }
