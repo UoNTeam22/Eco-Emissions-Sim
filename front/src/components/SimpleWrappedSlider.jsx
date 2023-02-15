@@ -12,13 +12,29 @@ export default class SimpleWrappedSlider extends Component {
             value: props.value || 0,
             min: props.min || 0,
             max: props.max || 100,
+            step: props.step || 1,
+            width: props.width || "270px",
             onChange: props.onChange || (() => {})
         }
     }
     
     render() {
         return (
-            <toolcool-range-slider min={this.state.min} max={this.state.max} value={this.state.value}></toolcool-range-slider>
+            <toolcool-range-slider 
+            min={this.state.min} 
+            max={this.state.max} 
+            value={this.state.value} 
+            step={this.state.step} 
+            slider-width={this.state.width} 
+            slider-height="0.5rem"
+            slider-bg="#2D4373" 
+            slider-bg-hover="#2D4373" 
+            slider-bg-fill="#71ff1a" 
+            pointer-width="1.5rem"
+            pointer-height="1.5rem"
+            pointer-bg="#71ff1a"
+            pointer-bg-hover="#71ff1a">
+            </toolcool-range-slider>
         );
     }
 
