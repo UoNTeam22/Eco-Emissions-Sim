@@ -12,7 +12,8 @@ class ModelRegistry {
 
     /**
      * Adds a model to the registry
-     * @param {Model} model the model to add 
+     * @param {Model} model the model to add #
+     * @param {String} modelId the id of the model to add, defaults to the model's constructor name (however this may not be unique or RESTful)
      */
     addModel(model, modelId = undefined) {
         // Check that the model is an instance of the Model class
