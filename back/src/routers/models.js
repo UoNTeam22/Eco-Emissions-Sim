@@ -1,7 +1,7 @@
 // Include express
 const express = require('express');
 
-const {Model} = require('../models');
+const {Model, Country} = require('../models');
 
 class ModelRegistry {
     #models;
@@ -131,6 +131,46 @@ router.use('/:modelId', (req, res, next) => {
 router.get('/:modelId', (req, res) => {
     // Display the model overview
     res.json(router.modelRegistry.getModelOverview(req.params.modelId));
+});
+
+router.put('/:modelId', async (req, res) => {
+    // Get the model
+    let model = req.model;
+
+    // Get the parameters
+    let params = req.body;
+
+    // Run the calculation
+    // I am awaiting the result here as future models may be asynchronous (e.g. if they use a database or an API)
+    let results = [];
+
+    for (let country of Country.all) {
+        try {
+            let result = await model.calculate(country, params);
+
+            if (!result) continue;
+
+            results.push({
+                country: country.name,
+                value: result
+            });
+        } catch (err) {
+            continue;
+        }
+    }
+
+    if (results.length === 0) {
+        res.status(400).send('Unable to calculate any valid results');
+        return;
+    }
+
+    let resultOverview = {
+        params,
+        results
+    };
+
+    // Display the result
+    res.json(resultOverview);
 });
 
 // Export the router

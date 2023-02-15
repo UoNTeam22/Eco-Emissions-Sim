@@ -1,5 +1,10 @@
 let express = require('express');
+let bodyParser = require('body-parser');
+
 let app = express();
+
+// Use body parser
+app.use(bodyParser.json());
 
 const PORT = 3000;
 
