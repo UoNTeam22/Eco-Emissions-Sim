@@ -16,7 +16,7 @@ export class Timescale extends Component {
     render() {
         return (
             <div className="slider">
-                <Slider name="Timescale" value={2023} rangeStart={2023} rangeEnd={2050} onChange={console.log} width="500px"/>
+                <Slider name="Timescale" value={2023} rangeStart={2023} rangeEnd={2050} onChange={console.log} width="78vw"/>
             </div>
         )
     }
