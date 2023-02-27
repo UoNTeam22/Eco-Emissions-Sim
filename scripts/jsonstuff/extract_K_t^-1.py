@@ -17,7 +17,8 @@ data = data.replace('The model of ', '')
 data = data.split('\n')
 
 # Remove the stuff after the colon
-names = [name.split(':')[0] for name in data]
+# The join is a bit of a hack, but it works :3
+names = [':'.join(name.split(':')[:-1]) for name in data]
 
 # Keep the stuff after the colon
 coefs = [name.split(':')[-1] for name in data]

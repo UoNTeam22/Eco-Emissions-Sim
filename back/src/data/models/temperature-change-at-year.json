@@ -200,17 +200,17 @@
         "const": -19.4463454
     },
     {
-        "country": "P.R. China",
+        "country": "P.R.: Hong Kong China",
         "xYearCoef": 0.0245441036,
         "const": -48.4734907
     },
     {
-        "country": "P.R. China",
+        "country": "P.R.: Macao China",
         "xYearCoef": 0.0245441036,
         "const": -48.4734907
     },
     {
-        "country": "P.R. China",
+        "country": "P.R.: Mainland China",
         "xYearCoef": 0.028307615,
         "const": -55.8049533
     },
