@@ -12,15 +12,14 @@ import '../styles/Slider.css';
 export class Factors extends Component {
     state = {}
 
-    // This is a placeholder as an example
     render() {
         return (
             <div>
                 <div className="slider">
-                    <Slider name="Fossil Fuels" value={0} rangeStart={-100} rangeEnd={100} onChange={console.log} step={20}/>
+                    <Slider name="Fossil Fuels" value={0} rangeStart={-100} rangeEnd={100} step={20}/>
                 </div>
                 <div className="slider">
-                    <Slider name="Vegetarianism" value={0} rangeStart={-100} rangeEnd={100} onChange={console.log} step={20}/>
+                    <Slider name="Vegetarianism" value={0} rangeStart={0} rangeEnd={7} step={1}/>
                 </div>
             </div>
         )

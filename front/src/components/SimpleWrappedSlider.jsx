@@ -1,9 +1,7 @@
-// Here's for the range slider
+// Range Slider
 import React, { Component } from 'react';
 
 import 'toolcool-range-slider';
-
-// TODO add custom CSS for this
 
 export default class SimpleWrappedSlider extends Component {
     constructor(props) {
