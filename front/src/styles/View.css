@@ -1,29 +1,26 @@
 .view {
-    position: fixed;
-    top: auto;
-    /* Width needs to be fixed */
-
-    /* This is a bit terrible */
-    width: calc(100% - 300px);
+    position: relative;
     left: 300px;
-    height: calc(100% - 80px);
-
+    width: calc(100vw - 300px);
+    height: calc(100vh - 80px);
     background: #88A2C4;
-    border-left: 2.5px solid black;
     overflow-y: auto;
 }
 
-.view > .body {
+.map {
     position: relative;
-    top: auto;
-    left: auto;
-    width: auto;
-    /* Change height to dynamic */
-    height: calc(100% - 100px);
-    background-color: white;
+    /* Dynamic height */
+    height: calc(100vh - 60px - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2.5px solid black;
-    margin: 1vh;
+}
+
+.timescale {
+    position: relative;
+    /* Fixed height */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -3,8 +3,8 @@
 }
 
 .map-container {
-    height: 68vh;
-    width: calc(100vw - 340px);
+    height: calc(100vh - 60px - 80px - 7vh);
+    width: calc(100vw - 300px - 1vw);
 }
 
 .map-style {

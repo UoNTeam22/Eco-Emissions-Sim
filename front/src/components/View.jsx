@@ -12,11 +12,10 @@ import '../styles/Slider.css';
 export class Timescale extends Component {
     state = {}
 
-    // This is a placeholder as an example
     render() {
         return (
             <div className="slider">
-                <Slider name="Timescale" value={2023} rangeStart={2023} rangeEnd={2050} width="77vw"/>
+                <Slider name="Timescale" value={2023} rangeStart={2023} rangeEnd={2050} width="calc(100vw - 350px)"/>
             </div>
         )
     }
@@ -28,10 +27,10 @@ class View extends Component {
     render() {
         return (
             <div className="view">
-                <div className="body">
+                <div className="map">
                     <TemperatureMap />
                 </div>
-                <div className="footer">
+                <div className="timescale">
                     <Timescale />
                 </div>
             </div>
