@@ -4,8 +4,6 @@ import React, { Component } from 'react';
 // Local components
 import SimpleWrappedSlider from './SimpleWrappedSlider.jsx';
 
-// CSS
-import '../styles/Sidebar.css';
 
 export default class Slider extends Component {
     constructor(props) {
@@ -60,7 +58,7 @@ export default class Slider extends Component {
     render() {
         return (
             <div className="setting">
-                <div className="name">{this.state.name}</div>
+                {/* <div className="name">{this.state.name}</div> */}
                 {this.renderInput()}
             </div>
         )
