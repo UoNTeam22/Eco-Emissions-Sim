@@ -6,7 +6,9 @@
 }
 
 .name {
-    height: 30px;
+    height: 31px;
+    line-height: 31px;
+    margin: 0 0;
     font-size: large;
     font-weight: bold;
 }

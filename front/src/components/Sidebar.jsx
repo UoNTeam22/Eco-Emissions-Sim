@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // Local components
 import ApplyButton from './ApplyButton.jsx';
 import Slider from './Slider.jsx';
+import FactorsList from './FactorsList.jsx';
 
 // CSS
 import '../styles/Sidebar.css';
@@ -32,7 +33,7 @@ export default class Sidebar extends Component {
         return (
             <div className="sidebar">
                 <div className="body">
-                    <Factors/>
+                    <FactorsList/>
                     <div className="overlay">
                         <ApplyButton onClick={this.applyChanges} text="Apply" />
                     </div>
