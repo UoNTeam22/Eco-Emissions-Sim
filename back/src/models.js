@@ -16,13 +16,19 @@ function openJsonData(filepath) {
 
 class Country {
     #name = '';
+    #code = '';
 
-    constructor(name) {
+    constructor(name, code = null) {
         this.#name = name;
+        this.#code = code;
     }
 
     get name() {
         return this.#name;
+    }
+
+    get code() {
+        return this.#code;
     }
 
     toString() {
@@ -40,7 +46,7 @@ class Country {
             let {name, code} = country;
 
             // Create the country object
-            country = new Country(name);
+            country = new Country(name, code);
             
             // Add the code to the country object
             converted.push(country);

@@ -123,6 +123,7 @@ describe('Models Router', () => {
             // Make sure that there is more than one result
             results.should.have.lengthOf.above(1);
 
+            allNull = true;
             // Check all the results
             for (let result of results) {
 
@@ -136,10 +137,25 @@ describe('Models Router', () => {
                 // Make sure that the first result has a value property
                 result.should.have.property('value');
                 result.value.should.be.a('number');
-                
+
+                // Should have a country code
+                result.should.have.property('code');
+
+                // Check if it is null
+                if (result.code !== null) {
+                    result.code.should.be.a('string');
+                    allNull = false;
+
+                    // Make sure it has 3 characters
+                    result.code.should.have.lengthOf(3);
+                }
+
                 // Make sure that the result is between -10 and 10
                 result.value.should.be.within(-10, 10, 'The value is not between -10 and 10 for ' + result.country);
             }
+
+            // Make sure that there is at least one country with a code
+            allNull.should.be.false;
         });
 
         it('should return 400 if the time is invalid', async () => {
