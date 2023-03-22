@@ -1,7 +1,7 @@
 [
     {
         "name": "Islamic Rep. of Afghanistan",
-        "code": null
+        "code": "AFG"
     },
     {
         "name": "Albania",
@@ -113,7 +113,7 @@
     },
     {
         "name": "Brunei Darussalam",
-        "code": null
+        "code": "BRN"
     },
     {
         "name": "Bulgaria",
@@ -149,7 +149,7 @@
     },
     {
         "name": "Central African Rep.",
-        "code": null
+        "code": "CAF"
     },
     {
         "name": "Chad",
@@ -161,15 +161,15 @@
     },
     {
         "name": "P.R.: Hong Kong China",
-        "code": "CHN"
+        "code": "HKG"
     },
     {
         "name": "P.R.: Macao China",
-        "code": null
+        "code": "CHN"
     },
     {
         "name": "P.R.: Mainland China",
-        "code": null
+        "code": "CHN"
     },
     {
         "name": "Colombia",
@@ -181,15 +181,15 @@
     },
     {
         "name": "Dem. Rep. of the Congo",
-        "code": "COG"
+        "code": "COD"
     },
     {
         "name": "Rep. of Congo",
-        "code": null
+        "code": "COG"
     },
     {
         "name": "Cook Islands",
-        "code": null
+        "code": "COK"
     },
     {
         "name": "Costa Rica",
@@ -209,7 +209,7 @@
     },
     {
         "name": "Czech Rep.",
-        "code": null
+        "code": "CZE"
     },
     {
         "name": "Denmark",
@@ -225,7 +225,7 @@
     },
     {
         "name": "Dominican Rep.",
-        "code": null
+        "code": "DOM"
     },
     {
         "name": "Ecuador",
@@ -253,7 +253,7 @@
     },
     {
         "name": "Kingdom of Eswatini",
-        "code": null
+        "code": "SWZ"
     },
     {
         "name": "The Federal Dem. Rep. of Ethiopia",
@@ -261,7 +261,7 @@
     },
     {
         "name": "Falkland Islands (Malvinas)",
-        "code": null
+        "code": "FLK"
     },
     {
         "name": "Faroe Islands",
@@ -305,7 +305,7 @@
     },
     {
         "name": "Gibraltar",
-        "code": null
+        "code": "GIB"
     },
     {
         "name": "Greece",
@@ -333,11 +333,11 @@
     },
     {
         "name": "Guinea",
-        "code": null
+        "code": "GIN"
     },
     {
         "name": "Guinea-Bissau",
-        "code": null
+        "code": "GNB"
     },
     {
         "name": "Guyana",
@@ -421,11 +421,11 @@
     },
     {
         "name": "Dem. People's Rep. of Korea",
-        "code": null
+        "code": "PRK"
     },
     {
         "name": "Rep. of Korea",
-        "code": null
+        "code": "KOR"
     },
     {
         "name": "Kuwait",
@@ -433,11 +433,11 @@
     },
     {
         "name": "Kyrgyz Rep.",
-        "code": null
+        "code": "KGZ"
     },
     {
         "name": "Lao People's Dem. Rep.",
-        "code": null
+        "code": "LAO"
     },
     {
         "name": "Latvia",
@@ -485,7 +485,7 @@
     },
     {
         "name": "Maldives",
-        "code": null
+        "code": "MDV"
     },
     {
         "name": "Mali",
@@ -497,7 +497,7 @@
     },
     {
         "name": "Rep. of the Marshall Islands",
-        "code": null
+        "code": "MHL"
     },
     {
         "name": "Martinique",
@@ -521,7 +521,7 @@
     },
     {
         "name": "Federated States of Micronesia",
-        "code": null
+        "code": "FSM"
     },
     {
         "name": "Rep. of Moldova",
@@ -553,7 +553,7 @@
     },
     {
         "name": "Myanmar",
-        "code": null
+        "code": "MMR"
     },
     {
         "name": "Namibia",
@@ -561,7 +561,7 @@
     },
     {
         "name": "Rep. of Nauru",
-        "code": null
+        "code": "NRU"
     },
     {
         "name": "Nepal",
@@ -569,7 +569,7 @@
     },
     {
         "name": "The Netherlands",
-        "code": null
+        "code": "NLD"
     },
     {
         "name": "New Caledonia",
@@ -597,11 +597,11 @@
     },
     {
         "name": "Norfolk Island",
-        "code": null
+        "code": "NFK"
     },
     {
         "name": "Republic of North Macedonia",
-        "code": null
+        "code": "MKD"
     },
     {
         "name": "Norway",
@@ -641,7 +641,7 @@
     },
     {
         "name": "Pitcairn Islands",
-        "code": null
+        "code": "PCN"
     },
     {
         "name": "Rep. of Poland",
@@ -673,7 +673,7 @@
     },
     {
         "name": "Saint Helena",
-        "code": null
+        "code": "SHN"
     },
     {
         "name": "Saint Pierre and Miquelon",
@@ -681,7 +681,7 @@
     },
     {
         "name": "Samoa",
-        "code": null
+        "code": "WSM"
     },
     {
         "name": "Rep. of San Marino",
@@ -689,7 +689,7 @@
     },
     {
         "name": "Dem. Rep. of S\u00e3o Tom\u00e9 and Pr\u00edncipe",
-        "code": null
+        "code": "STP"
     },
     {
         "name": "Saudi Arabia",
@@ -717,7 +717,7 @@
     },
     {
         "name": "Slovak Rep.",
-        "code": null
+        "code": "SVK"
     },
     {
         "name": "Rep. of Slovenia",
@@ -749,19 +749,19 @@
     },
     {
         "name": "St. Kitts and Nevis",
-        "code": null
+        "code": "KNA"
     },
     {
         "name": "St. Lucia",
-        "code": null
+        "code": "LCA"
     },
     {
         "name": "St. Vincent and the Grenadines",
-        "code": null
+        "code": "VCT"
     },
     {
         "name": "Sudan",
-        "code": null
+        "code": "SDN"
     },
     {
         "name": "Suriname",
@@ -797,7 +797,7 @@
     },
     {
         "name": "Dem. Rep. of Timor-Leste",
-        "code": null
+        "code": "TLS"
     },
     {
         "name": "Togo",
@@ -805,7 +805,7 @@
     },
     {
         "name": "Tokelau",
-        "code": null
+        "code": "TKL"
     },
     {
         "name": "Tonga",
@@ -829,11 +829,11 @@
     },
     {
         "name": "Turks and Caicos Islands",
-        "code": null
+        "code": "TCA"
     },
     {
         "name": "Tuvalu",
-        "code": null
+        "code": "TUV"
     },
     {
         "name": "Uganda",
@@ -857,7 +857,7 @@
     },
     {
         "name": "United States Virgin Islands",
-        "code": null
+        "code": "VIR"
     },
     {
         "name": "Uruguay",
@@ -869,7 +869,7 @@
     },
     {
         "name": "Vanuatu",
-        "code": null
+        "code": "VUT"
     },
     {
         "name": "Rep. Bolivariana de Venezuela",
@@ -881,7 +881,7 @@
     },
     {
         "name": "Wallis and Futuna Islands",
-        "code": null
+        "code": "WLF"
     },
     {
         "name": "West Bank and Gaza",
