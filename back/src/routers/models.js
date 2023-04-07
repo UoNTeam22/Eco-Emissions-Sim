@@ -152,6 +152,7 @@ router.put('/:modelId', async (req, res) => {
 
             results.push({
                 country: country.name,
+                code: country.code,
                 value: result
             });
         } catch (err) {
