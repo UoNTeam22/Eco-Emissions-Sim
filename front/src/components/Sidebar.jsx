@@ -56,10 +56,6 @@ export default class Sidebar extends Component {
         ClientModel.getModels().then(async models => {
             for (let model of models) {
                 // Current the only one is "ChangeTemperatureTimeModel"
-                let modelName = await model.getName();
-                //console.log(modelName);
-                let modelParams = await model.getParams();
-                //console.log(modelParams);
                 let yearResults = await model.getResults({"time": 2030});
                 //console.log(yearResults);
 
