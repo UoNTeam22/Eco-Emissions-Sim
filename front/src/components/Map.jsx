@@ -11,7 +11,7 @@ const Map = ({ countries }) => {
     layer.options.fillColor = country.properties.color;
     const name = country.properties.ADMIN;
     const temperature = country.properties.temperature;
-    layer.bindPopup(`${name}: ${temperature}`);
+    layer.bindPopup(`${name}: ${Number.parseFloat(temperature).toFixed(2)}°C`);
   };
 
   return (
