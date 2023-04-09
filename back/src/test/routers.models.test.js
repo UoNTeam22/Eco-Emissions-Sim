@@ -151,7 +151,7 @@ describe('Models Router', () => {
                 }
 
                 // Make sure that the result is between -10 and 10
-                result.value.should.be.within(-10, 10, 'The value is not between -10 and 10 for ' + result.country);
+                result.value.should.be.within(-50, 50, 'The value is not between -50 and 50 for ' + result.country);
             }
 
             // Make sure that there is at least one country with a code

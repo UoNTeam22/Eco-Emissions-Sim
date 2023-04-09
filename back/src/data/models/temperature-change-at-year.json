@@ -1,143 +1,143 @@
 [
     {
         "country": "Islamic Rep. of Afghanistan",
-        "xYearCoef": 0.0268462189,
-        "const": -52.9391989
+        "xYearCoef": 0.006746611780216838,
+        "const": 2.155925250994802
     },
     {
         "country": "Albania",
-        "xYearCoef": 0.0317259122,
-        "const": -62.6657338
+        "xYearCoef": 0.053914377340655226,
+        "const": -92.41393920273914
     },
     {
         "country": "Algeria",
-        "xYearCoef": 0.0327581174,
-        "const": -64.5183626
+        "xYearCoef": 0.02333736252747094,
+        "const": -21.60491553494192
     },
     {
         "country": "American Samoa",
-        "xYearCoef": 0.0191069858,
-        "const": -37.6447792
+        "xYearCoef": -0.004078571186813232,
+        "const": 35.28526142934075
     },
     {
         "country": "Principality of Andorra",
-        "xYearCoef": 0.033660973,
-        "const": -66.3066694
+        "xYearCoef": 0.0008550367252754036,
+        "const": 10.610039648020642
     },
     {
         "country": "Angola",
-        "xYearCoef": 0.0263468006,
-        "const": -51.904644
+        "xYearCoef": -0.034852106329668134,
+        "const": 91.05115908362203
     },
     {
         "country": "Anguilla",
-        "xYearCoef": 0.0197925965,
-        "const": -39.0078465
+        "xYearCoef": 0.014677655560441302,
+        "const": -1.373989696596831
     },
     {
         "country": "Antigua and Barbuda",
-        "xYearCoef": 0.0197777438,
-        "const": -38.9818491
+        "xYearCoef": 0.01397902956044141,
+        "const": -0.1677555408827597
     },
     {
         "country": "Argentina",
-        "xYearCoef": 0.0134446325,
-        "const": -26.4556567
+        "xYearCoef": -0.0029999084175799844,
+        "const": 21.126763263731473
     },
     {
         "country": "Rep. of Armenia",
-        "xYearCoef": 0.0677328142,
-        "const": -132.721075
+        "xYearCoef": 0.06132417572966464,
+        "const": -110.63225622404374
     },
     {
         "country": "Kingdom of the Netherlands Aruba",
-        "xYearCoef": 0.0210088283,
-        "const": -41.4006157
+        "xYearCoef": 0.009005311010991238,
+        "const": 10.947842252303312
     },
     {
         "country": "Australia",
-        "xYearCoef": 0.0197647805,
-        "const": -38.8883994
+        "xYearCoef": -0.0008149267032934506,
+        "const": 23.836764122301297
     },
     {
         "country": "Austria",
-        "xYearCoef": 0.0399552089,
-        "const": -78.7641815
+        "xYearCoef": 0.012145695945052448,
+        "const": -16.39257641481926
     },
     {
         "country": "Rep. of Azerbaijan",
-        "xYearCoef": 0.0676173526,
-        "const": -132.473613
+        "xYearCoef": 0.059253205274720014,
+        "const": -103.81716649658301
     },
     {
         "country": "The Bahamas",
-        "xYearCoef": 0.0212482813,
-        "const": -41.8409183
+        "xYearCoef": 0.005364652131869962,
+        "const": 15.263457646260134
     },
     {
         "country": "Kingdom of Bahrain",
-        "xYearCoef": 0.0383793231,
-        "const": -75.8067077
+        "xYearCoef": 0.03640998138461374,
+        "const": -44.3022663506561
     },
     {
         "country": "Bangladesh",
-        "xYearCoef": 0.0180710206,
-        "const": -35.757566
+        "xYearCoef": 0.038616483406592864,
+        "const": -50.469573960328596
     },
     {
         "country": "Barbados",
-        "xYearCoef": 0.0186130918,
-        "const": -36.7454763
+        "xYearCoef": 0.01807481716483675,
+        "const": -8.221973605387722
     },
     {
         "country": "Rep. of Belarus",
-        "xYearCoef": 0.0587510567,
-        "const": -114.580713
+        "xYearCoef": 0.019453479870326213,
+        "const": -30.897745454366817
     },
     {
         "country": "Belgium",
-        "xYearCoef": 0.0301434218,
-        "const": -57.9843015
+        "xYearCoef": -0.04976327837362379,
+        "const": 108.56047936581908
     },
     {
         "country": "Belize",
-        "xYearCoef": 0.0197640931,
-        "const": -38.9263913
+        "xYearCoef": 0.026653113582418543,
+        "const": -26.69591764055132
     },
     {
         "country": "Benin",
-        "xYearCoef": 0.0254584347,
-        "const": -50.1152353
+        "xYearCoef": 0.0270237179340668,
+        "const": -25.206025155276418
     },
     {
         "country": "Bhutan",
-        "xYearCoef": 0.022886991,
-        "const": -45.271868
+        "xYearCoef": 0.05959221613186728,
+        "const": -104.7066644065917
     },
     {
         "country": "Bolivia",
-        "xYearCoef": 0.0126413009,
-        "const": -24.780158
+        "xYearCoef": -0.005686721472525519,
+        "const": 32.51284175933681
     },
     {
         "country": "Bosnia and Herzegovina",
-        "xYearCoef": 0.0511619577,
-        "const": -99.8401475
+        "xYearCoef": 0.05387362657142333,
+        "const": -94.34688408856108
     },
     {
         "country": "Botswana",
-        "xYearCoef": 0.0177649921,
-        "const": -34.9407058
+        "xYearCoef": -0.03867820516483007,
+        "const": 98.51973175680314
     },
     {
         "country": "Brazil",
-        "xYearCoef": 0.0258350608,
-        "const": -50.8936225
+        "xYearCoef": 0.003938553076924718,
+        "const": 17.817125987579193
     },
     {
         "country": "British Virgin Islands",
-        "xYearCoef": 0.0199738763,
-        "const": -39.3525122
+        "xYearCoef": 0.021915384769232295,
+        "const": -15.87388858132168
     },
     {
         "country": "Brunei Darussalam",
@@ -146,43 +146,43 @@
     },
     {
         "country": "Bulgaria",
-        "xYearCoef": 0.0316736647,
-        "const": -62.554955
+        "xYearCoef": 0.0705147436263674,
+        "const": -127.04102891987782
     },
     {
         "country": "Burkina Faso",
-        "xYearCoef": 0.0246537811,
-        "const": -48.4990552
+        "xYearCoef": 0.024317399054945756,
+        "const": -18.89778621132006
     },
     {
         "country": "Burundi",
-        "xYearCoef": 0.0489793103,
-        "const": -96.352
+        "xYearCoef": 0.002616850153847273,
+        "const": 15.66570446516263
     },
     {
         "country": "Cabo Verde",
-        "xYearCoef": 0.0367709865,
-        "const": -72.1376363
+        "xYearCoef": 0.020890201626374692,
+        "const": -14.276171105606483
     },
     {
         "country": "Cambodia",
-        "xYearCoef": 0.0207782655,
-        "const": -40.9372151
+        "xYearCoef": 0.043024084043954185,
+        "const": -57.25863833219413
     },
     {
         "country": "Cameroon",
-        "xYearCoef": 0.022695505,
-        "const": -44.7003571
+        "xYearCoef": 0.032238736153847015,
+        "const": -38.34229969340828
     },
     {
         "country": "Canada",
-        "xYearCoef": 0.0349813855,
-        "const": -68.9982828
+        "xYearCoef": 0.11120128204614804,
+        "const": -222.27381409243907
     },
     {
         "country": "Cayman Islands",
-        "xYearCoef": 0.0216839836,
-        "const": -42.5335988
+        "xYearCoef": -0.008427167142854885,
+        "const": 44.013770798566966
     },
     {
         "country": "Central African Rep.",
@@ -191,48 +191,48 @@
     },
     {
         "country": "Chad",
-        "xYearCoef": 0.0220864093,
-        "const": -43.4982868
+        "xYearCoef": 0.039974176021978565,
+        "const": -50.68947108538566
     },
     {
         "country": "Chile",
-        "xYearCoef": 0.00988212586,
-        "const": -19.4463454
+        "xYearCoef": 0.01796730759340725,
+        "const": -25.420811618814465
     },
     {
         "country": "P.R.: Hong Kong China",
-        "xYearCoef": 0.0245441036,
-        "const": -48.4734907
+        "xYearCoef": -0.010114743626373589,
+        "const": 43.191409871318605
     },
     {
         "country": "P.R.: Macao China",
-        "xYearCoef": 0.0245441036,
-        "const": -48.4734907
+        "xYearCoef": 0.040406959690108345,
+        "const": -71.78595509507386
     },
     {
         "country": "P.R.: Mainland China",
-        "xYearCoef": 0.028307615,
-        "const": -55.8049533
+        "xYearCoef": 0.040406959690108345,
+        "const": -71.78595509507386
     },
     {
         "country": "Colombia",
-        "xYearCoef": 0.0182630883,
-        "const": -36.0220875
+        "xYearCoef": 0.006385714175825776,
+        "const": 12.902619264062787
     },
     {
         "country": "Union of the Comoros",
-        "xYearCoef": 0.0135416131,
-        "const": -26.7180304
+        "xYearCoef": 0.012987087802199607,
+        "const": 0.9308303441722785
     },
     {
         "country": "Dem. Rep. of the Congo",
-        "xYearCoef": 0.0271537282,
-        "const": -53.5387941
+        "xYearCoef": 0.01830485327472627,
+        "const": -10.906093459452496
     },
     {
         "country": "Rep. of Congo",
-        "xYearCoef": 0.0257003612,
-        "const": -50.707769
+        "xYearCoef": 0.01830485327472627,
+        "const": -10.906093459452496
     },
     {
         "country": "Cook Islands",
@@ -241,23 +241,23 @@
     },
     {
         "country": "Costa Rica",
-        "xYearCoef": 0.0155476529,
-        "const": -30.5394737
+        "xYearCoef": 0.0031971918901109665,
+        "const": 20.035243211206673
     },
     {
         "country": "Rep. of Croatia",
-        "xYearCoef": 0.049065406,
-        "const": -95.6372762
+        "xYearCoef": 0.03465897410988573,
+        "const": -55.56025775120015
     },
     {
         "country": "Cuba",
-        "xYearCoef": 0.0208632998,
-        "const": -41.0238628
+        "xYearCoef": 0.0007115992527489287,
+        "const": 24.69493640593077
     },
     {
         "country": "Cyprus",
-        "xYearCoef": 0.0292505024,
-        "const": -57.8248322
+        "xYearCoef": 0.054471153868130756,
+        "const": -87.25169464054724
     },
     {
         "country": "Czech Rep.",
@@ -266,53 +266,53 @@
     },
     {
         "country": "Denmark",
-        "xYearCoef": 0.0368338445,
-        "const": -72.6336599
+        "xYearCoef": 0.0689957872307678,
+        "const": -152.03444351867847
     },
     {
         "country": "Djibouti",
-        "xYearCoef": 0.0297827986,
-        "const": -58.742033
+        "xYearCoef": 0.04431666652747017,
+        "const": -57.398380679226115
     },
     {
         "country": "Dominica",
-        "xYearCoef": 0.0195069276,
-        "const": -38.4532928
+        "xYearCoef": 0.019282508813188107,
+        "const": -10.93794025637616
     },
     {
         "country": "Dominican Rep.",
-        "xYearCoef": 0.0249893178,
-        "const": -49.1712892
+        "xYearCoef": 0.019282508813188107,
+        "const": -10.93794025637616
     },
     {
         "country": "Ecuador",
-        "xYearCoef": 0.0184325754,
-        "const": -36.3157166
+        "xYearCoef": 0.0007669416483537278,
+        "const": 20.949789331864036
     },
     {
         "country": "Arab Rep. of Egypt",
-        "xYearCoef": 0.0252468535,
-        "const": -49.947928
+        "xYearCoef": 0.07317912105494377,
+        "const": -120.24890876988754
     },
     {
         "country": "El Salvador",
-        "xYearCoef": 0.0230266526,
-        "const": -45.3765407
+        "xYearCoef": 0.0061577532967037945,
+        "const": 13.488116420878146
     },
     {
         "country": "Rep. of Equatorial Guinea",
-        "xYearCoef": 0.0228056692,
-        "const": -44.9650105
+        "xYearCoef": 0.026699999934066996,
+        "const": -26.92253558384823
     },
     {
         "country": "The State of Eritrea",
-        "xYearCoef": 0.0363546154,
-        "const": -70.7262962
+        "xYearCoef": 0.04847362630769066,
+        "const": -67.63955023680994
     },
     {
         "country": "Rep. of Estonia",
-        "xYearCoef": 0.0561159066,
-        "const": -109.340073
+        "xYearCoef": 0.0006260073164807714,
+        "const": 5.043056795181225
     },
     {
         "country": "Kingdom of Eswatini",
@@ -321,8 +321,8 @@
     },
     {
         "country": "The Federal Dem. Rep. of Ethiopia",
-        "xYearCoef": 0.0355339901,
-        "const": -69.1629754
+        "xYearCoef": 0.041857875538460404,
+        "const": -58.44339393120655
     },
     {
         "country": "Falkland Islands (Malvinas)",
@@ -331,53 +331,53 @@
     },
     {
         "country": "Faroe Islands",
-        "xYearCoef": 0.0226706504,
-        "const": -44.7455109
+        "xYearCoef": -0.030433608041754188,
+        "const": 67.38387679836565
     },
     {
         "country": "Rep. of Fiji",
-        "xYearCoef": 0.0203096774,
-        "const": -40.0618792
+        "xYearCoef": 0.0022431316703287007,
+        "const": 21.272718796485417
     },
     {
         "country": "Finland",
-        "xYearCoef": 0.042028715,
-        "const": -82.9074338
+        "xYearCoef": 0.012369322340656392,
+        "const": -21.583650633741446
     },
     {
         "country": "France",
-        "xYearCoef": 0.0338772607,
-        "const": -66.7757736
+        "xYearCoef": -0.019187270945053146,
+        "const": 51.598000227249194
     },
     {
         "country": "French Polynesia",
-        "xYearCoef": 0.0170741407,
-        "const": -33.6536632
+        "xYearCoef": 0.004699908263736878,
+        "const": 17.54327275252626
     },
     {
         "country": "Gabon",
-        "xYearCoef": 0.0211746695,
-        "const": -41.7852915
+        "xYearCoef": 0.021965751010990145,
+        "const": -18.3064305891231
     },
     {
         "country": "The Gambia",
-        "xYearCoef": 0.031426018,
-        "const": -61.7429395
+        "xYearCoef": 0.012075000109889988,
+        "const": 4.618600974505735
     },
     {
         "country": "Georgia",
-        "xYearCoef": 0.0669922136,
-        "const": -131.389851
+        "xYearCoef": 0.06259752750988552,
+        "const": -113.61020382791402
     },
     {
         "country": "Germany",
-        "xYearCoef": 0.037595981,
-        "const": -74.1228112
+        "xYearCoef": -0.030984432329669954,
+        "const": 70.34901941848277
     },
     {
         "country": "Ghana",
-        "xYearCoef": 0.0261223162,
-        "const": -51.4118923
+        "xYearCoef": 0.02371904756044009,
+        "const": -19.157035599451593
     },
     {
         "country": "Gibraltar",
@@ -386,28 +386,28 @@
     },
     {
         "country": "Greece",
-        "xYearCoef": 0.0251666314,
-        "const": -49.7775008
+        "xYearCoef": 0.0647972530109848,
+        "const": -111.66977982339827
     },
     {
         "country": "Greenland",
-        "xYearCoef": 0.0385900053,
-        "const": -76.4106022
+        "xYearCoef": 0.07154743621977888,
+        "const": -157.5760748109863
     },
     {
         "country": "Grenada",
-        "xYearCoef": 0.0191158646,
-        "const": -37.6950635
+        "xYearCoef": 0.02155320496703412,
+        "const": -14.786368271211048
     },
     {
         "country": "Guadeloupe",
-        "xYearCoef": 0.0196252776,
-        "const": -38.6815835
+        "xYearCoef": 0.014862637538463053,
+        "const": -2.015072689783196
     },
     {
         "country": "Guatemala",
-        "xYearCoef": 0.0229498149,
-        "const": -45.2309995
+        "xYearCoef": 0.024564835142857944,
+        "const": -24.525348858573004
     },
     {
         "country": "French Guiana",
@@ -416,113 +416,113 @@
     },
     {
         "country": "Guinea",
-        "xYearCoef": 0.0266219461,
-        "const": -52.3939176
+        "xYearCoef": 0.01266300371428678,
+        "const": 1.4309092399979002
     },
     {
         "country": "Guinea-Bissau",
-        "xYearCoef": 0.0314550502,
-        "const": -61.860169
+        "xYearCoef": 0.01266300371428678,
+        "const": 1.4309092399979002
     },
     {
         "country": "Guyana",
-        "xYearCoef": 0.0259124273,
-        "const": -51.1382329
+        "xYearCoef": 0.016331318879122286,
+        "const": -5.341887752530226
     },
     {
         "country": "Haiti",
-        "xYearCoef": 0.0268083554,
-        "const": -52.726747
+        "xYearCoef": 8.3089186815254e-05,
+        "const": 26.91937718351242
     },
     {
         "country": "Holy See",
-        "xYearCoef": 0.0276659968,
-        "const": -54.5946718
+        "xYearCoef": 0.005748351617581717,
+        "const": -8.383488950449166
     },
     {
         "country": "Honduras",
-        "xYearCoef": 0.0211929667,
-        "const": -41.7490819
+        "xYearCoef": 0.011980952109891072,
+        "const": 1.834095771646454
     },
     {
         "country": "Hungary",
-        "xYearCoef": 0.0370062401,
-        "const": -73.0278502
+        "xYearCoef": 0.04555934074944547,
+        "const": -78.59681244931963
     },
     {
         "country": "Iceland",
-        "xYearCoef": 0.0275756742,
-        "const": -54.5488232
+        "xYearCoef": 0.0037239926989024374,
+        "const": -4.754104444519115
     },
     {
         "country": "India",
-        "xYearCoef": 0.016842623,
-        "const": -33.2606131
+        "xYearCoef": 0.028760439296702384,
+        "const": -31.8555928876905
     },
     {
         "country": "Indonesia",
-        "xYearCoef": 0.0177986779,
-        "const": -35.1005448
+        "xYearCoef": 0.00013150178022044493,
+        "const": 26.10602024670199
     },
     {
         "country": "Islamic Rep. of Iran",
-        "xYearCoef": 0.0330517715,
-        "const": -65.2011427
+        "xYearCoef": 0.04743571450549105,
+        "const": -74.1259766209822
     },
     {
         "country": "Iraq",
-        "xYearCoef": 0.0342367002,
-        "const": -67.6389421
+        "xYearCoef": 0.059098901296699216,
+        "const": -93.0781954448271
     },
     {
         "country": "Ireland",
-        "xYearCoef": 0.0238065045,
-        "const": -46.9863242
+        "xYearCoef": -0.030519597079117815,
+        "const": 70.30007511080716
     },
     {
         "country": "Isle of Man",
-        "xYearCoef": 0.0239142253,
-        "const": -47.209452
+        "xYearCoef": -0.05540338818900612,
+        "const": 119.26449661901236
     },
     {
         "country": "Israel",
-        "xYearCoef": 0.0298556319,
-        "const": -59.0995304
+        "xYearCoef": 0.05607811349450375,
+        "const": -89.53555437186469
     },
     {
         "country": "Italy",
-        "xYearCoef": 0.0319606029,
-        "const": -63.0318718
+        "xYearCoef": 0.005590476351647363,
+        "const": 2.8890234924195255
     },
     {
         "country": "Jamaica",
-        "xYearCoef": 0.0217007906,
-        "const": -42.6244297
+        "xYearCoef": 0.0057060438241769975,
+        "const": 15.607638537360334
     },
     {
         "country": "Japan",
-        "xYearCoef": 0.0209240613,
-        "const": -41.3216586
+        "xYearCoef": 0.013013186945054694,
+        "const": -12.75619531439511
     },
     {
         "country": "Jordan",
-        "xYearCoef": 0.0314743522,
-        "const": -62.2975828
+        "xYearCoef": 0.06974441399999728,
+        "const": -116.65147680713748
     },
     {
         "country": "Rep. of Kazakhstan",
-        "xYearCoef": 0.0384186874,
-        "const": -74.6201837
+        "xYearCoef": 0.011196886457139251,
+        "const": -15.154570532992903
     },
     {
         "country": "Kenya",
-        "xYearCoef": 0.0224866208,
-        "const": -44.3460096
+        "xYearCoef": 0.025841392043956576,
+        "const": -25.987926942198836
     },
     {
         "country": "Kiribati",
-        "xYearCoef": 0.0271383402,
-        "const": -53.5932461
+        "xYearCoef": -0.008096977890107762,
+        "const": 43.40616411878701
     },
     {
         "country": "Dem. People's Rep. of Korea",
@@ -536,8 +536,8 @@
     },
     {
         "country": "Kuwait",
-        "xYearCoef": 0.0371677948,
-        "const": -73.3980139
+        "xYearCoef": 0.042936904835161833,
+        "const": -57.97136323889516
     },
     {
         "country": "Kyrgyz Rep.",
@@ -551,58 +551,58 @@
     },
     {
         "country": "Latvia",
-        "xYearCoef": 0.0538238042,
-        "const": -104.860525
+        "xYearCoef": -0.007442032964837695,
+        "const": 21.41017902481816
     },
     {
         "country": "Lebanon",
-        "xYearCoef": 0.0321841354,
-        "const": -63.6425644
+        "xYearCoef": 0.04811153859340457,
+        "const": -75.86552956395202
     },
     {
         "country": "Kingdom of Lesotho",
-        "xYearCoef": 0.017485193,
-        "const": -34.3553636
+        "xYearCoef": -0.013412728989008625,
+        "const": 40.73286869087446
     },
     {
         "country": "Liberia",
-        "xYearCoef": 0.0275636171,
-        "const": -54.2712273
+        "xYearCoef": 0.0140855311208803,
+        "const": -1.4591336703319817
     },
     {
         "country": "Libya",
-        "xYearCoef": 0.0253308831,
-        "const": -50.0359359
+        "xYearCoef": 0.05069871784615251,
+        "const": -76.31074521944791
     },
     {
         "country": "Liechtenstein",
-        "xYearCoef": 0.0374895822,
-        "const": -73.8825779
+        "xYearCoef": -0.004132692351649119,
+        "const": 13.99496208286964
     },
     {
         "country": "Lithuania",
-        "xYearCoef": 0.0528589544,
-        "const": -102.996364
+        "xYearCoef": -0.015352380973628873,
+        "const": 37.53128575597195
     },
     {
         "country": "Luxembourg",
-        "xYearCoef": 0.0318469791,
-        "const": -61.2830011
+        "xYearCoef": -0.04297692291428378,
+        "const": 94.90209583313904
     },
     {
         "country": "Rep. of Madagascar",
-        "xYearCoef": 0.0194144368,
-        "const": -38.2788158
+        "xYearCoef": -0.008197069626371746,
+        "const": 39.646627347029266
     },
     {
         "country": "Malawi",
-        "xYearCoef": 0.0234045479,
-        "const": -46.1028646
+        "xYearCoef": -0.012883608131864458,
+        "const": 47.416805548014736
     },
     {
         "country": "Malaysia",
-        "xYearCoef": 0.0233913802,
-        "const": -46.1028938
+        "xYearCoef": 0.01561263731868136,
+        "const": -4.129798448791283
     },
     {
         "country": "Maldives",
@@ -611,13 +611,13 @@
     },
     {
         "country": "Mali",
-        "xYearCoef": 0.0259643046,
-        "const": -51.0327337
+        "xYearCoef": 0.013144139362637539,
+        "const": 3.4965784232963637
     },
     {
         "country": "Malta",
-        "xYearCoef": 0.0321245373,
-        "const": -63.3424127
+        "xYearCoef": -0.0019576006373633686,
+        "const": 23.413481040440995
     },
     {
         "country": "Rep. of the Marshall Islands",
@@ -626,28 +626,28 @@
     },
     {
         "country": "Martinique",
-        "xYearCoef": 0.0195261237,
-        "const": -38.4963648
+        "xYearCoef": 0.019282508813188107,
+        "const": -10.93794025637616
     },
     {
         "country": "Islamic Rep. of Mauritania",
-        "xYearCoef": 0.0314948176,
-        "const": -61.8912965
+        "xYearCoef": 0.008632234505494319,
+        "const": 11.637150039011349
     },
     {
         "country": "Mauritius",
-        "xYearCoef": 0.0164803279,
-        "const": -32.506841
+        "xYearCoef": 0.014646428571429537,
+        "const": -4.454553572859045
     },
     {
         "country": "Mayotte",
-        "xYearCoef": 0.015922483,
-        "const": -31.4029868
+        "xYearCoef": 0.015053296813188611,
+        "const": -2.493784099234298
     },
     {
         "country": "Mexico",
-        "xYearCoef": 0.0241144897,
-        "const": -47.6220637
+        "xYearCoef": 0.04475305254944897,
+        "const": -66.71516859032653
     },
     {
         "country": "Federated States of Micronesia",
@@ -656,38 +656,38 @@
     },
     {
         "country": "Rep. of Moldova",
-        "xYearCoef": 0.0670115684,
-        "const": -131.205453
+        "xYearCoef": 0.06843736281757719,
+        "const": -124.25935658144023
     },
     {
         "country": "Monaco",
-        "xYearCoef": 0.0309306187,
-        "const": -60.9624356
+        "xYearCoef": 0.0006047620835169903,
+        "const": 9.007749648823175
     },
     {
         "country": "Mongolia",
-        "xYearCoef": 0.0349053411,
-        "const": -68.6142062
+        "xYearCoef": 0.018517765549448707,
+        "const": -35.75320967089746
     },
     {
         "country": "Montenegro",
-        "xYearCoef": 0.0541691176,
-        "const": -105.099221
+        "xYearCoef": 0.059665293164829894,
+        "const": -106.06528275394567
     },
     {
         "country": "Montserrat",
-        "xYearCoef": 0.0197777438,
-        "const": -38.9818491
+        "xYearCoef": 0.013754944945056576,
+        "const": 0.21958629702975788
     },
     {
         "country": "Morocco",
-        "xYearCoef": 0.0356748281,
-        "const": -70.2459763
+        "xYearCoef": 0.023316666703295578,
+        "const": -27.066404833734037
     },
     {
         "country": "Rep. of Mozambique",
-        "xYearCoef": 0.0165814384,
-        "const": -32.673775
+        "xYearCoef": -0.023242674153842745,
+        "const": 69.9423959219713
     },
     {
         "country": "Myanmar",
@@ -696,8 +696,8 @@
     },
     {
         "country": "Namibia",
-        "xYearCoef": 0.0278528821,
-        "const": -54.8509243
+        "xYearCoef": -0.045822802197799724,
+        "const": 111.32238415702808
     },
     {
         "country": "Rep. of Nauru",
@@ -706,43 +706,43 @@
     },
     {
         "country": "Nepal",
-        "xYearCoef": 0.0164762559,
-        "const": -32.5749633
+        "xYearCoef": 0.021231318681318848,
+        "const": -26.12108974406625
     },
     {
         "country": "The Netherlands",
-        "xYearCoef": 0.0367628239,
-        "const": -72.4915365
+        "xYearCoef": -0.059020329536260845,
+        "const": 126.81290907709317
     },
     {
         "country": "New Caledonia",
-        "xYearCoef": 0.0156467478,
-        "const": -30.8367403
+        "xYearCoef": 0.008665842637362841,
+        "const": 6.386427825274329
     },
     {
         "country": "New Zealand",
-        "xYearCoef": 0.0142700687,
-        "const": -28.1373954
+        "xYearCoef": -0.0027197799560442796,
+        "const": 16.347167063517116
     },
     {
         "country": "Nicaragua",
-        "xYearCoef": 0.0206274458,
-        "const": -40.6547692
+        "xYearCoef": 0.007944627956045551,
+        "const": 11.052609179337525
     },
     {
         "country": "Niger",
-        "xYearCoef": 0.0251097303,
-        "const": -49.4057189
+        "xYearCoef": 0.05748946909890074,
+        "const": -84.67481318923005
     },
     {
         "country": "Nigeria",
-        "xYearCoef": 0.0237907456,
-        "const": -46.796768
+        "xYearCoef": 0.05748946909890074,
+        "const": -84.67481318923005
     },
     {
         "country": "Niue",
-        "xYearCoef": 0.0079226601,
-        "const": -15.6100468
+        "xYearCoef": 0.004348351824175044,
+        "const": 17.219986833078455
     },
     {
         "country": "Norfolk Island",
@@ -756,48 +756,48 @@
     },
     {
         "country": "Norway",
-        "xYearCoef": 0.0353485986,
-        "const": -69.7318631
+        "xYearCoef": -0.0031301281978018364,
+        "const": 7.608702824460826
     },
     {
         "country": "Oman",
-        "xYearCoef": 0.0234071391,
-        "const": -46.2027614
+        "xYearCoef": 0.017849908373627096,
+        "const": -6.977882224397021
     },
     {
         "country": "Pakistan",
-        "xYearCoef": 0.0210214172,
-        "const": -41.5587565
+        "xYearCoef": 0.0008391026593391424,
+        "const": 20.1187411141788
     },
     {
         "country": "Rep. of Palau",
-        "xYearCoef": 0.0199015385,
-        "const": -38.62384
+        "xYearCoef": -0.002428113296703167,
+        "const": 32.516673030549185
     },
     {
         "country": "Panama",
-        "xYearCoef": 0.0198156598,
-        "const": -39.0367509
+        "xYearCoef": 0.011068864637363758,
+        "const": 5.2451516838439485
     },
     {
         "country": "Papua New Guinea",
-        "xYearCoef": 0.0170952935,
-        "const": -33.7089753
+        "xYearCoef": 0.01266300371428678,
+        "const": 1.4309092399979002
     },
     {
         "country": "Paraguay",
-        "xYearCoef": 0.0127004231,
-        "const": -24.952903
+        "xYearCoef": -0.041180219604391895,
+        "const": 104.99082016592673
     },
     {
         "country": "Peru",
-        "xYearCoef": 0.0210804336,
-        "const": -41.4853729
+        "xYearCoef": -0.006469413978020722,
+        "const": 33.09713747747005
     },
     {
         "country": "Philippines",
-        "xYearCoef": 0.0211438921,
-        "const": -41.6566695
+        "xYearCoef": 0.009387912285713847,
+        "const": 8.627770672858002
     },
     {
         "country": "Pitcairn Islands",
@@ -806,38 +806,38 @@
     },
     {
         "country": "Rep. of Poland",
-        "xYearCoef": 0.0362008461,
-        "const": -71.3793108
+        "xYearCoef": -0.01039917581099149,
+        "const": 29.248238527268605
     },
     {
         "country": "Portugal",
-        "xYearCoef": 0.0287258593,
-        "const": -56.5705958
+        "xYearCoef": 0.02598699648351675,
+        "const": -35.51443343846204
     },
     {
         "country": "Puerto Rico",
-        "xYearCoef": 0.0220722898,
-        "const": -43.4833552
+        "xYearCoef": 0.016608180395606246,
+        "const": -6.341102865498144
     },
     {
         "country": "Qatar",
-        "xYearCoef": 0.0368738763,
-        "const": -72.8321335
+        "xYearCoef": 0.028172710505493706,
+        "const": -27.193968633844577
     },
     {
         "country": "Romania",
-        "xYearCoef": 0.0336810682,
-        "const": -66.5030068
+        "xYearCoef": 0.017849908373627096,
+        "const": -6.977882224397021
     },
     {
         "country": "Russian Federation",
-        "xYearCoef": 0.0603512792,
-        "const": -117.742452
+        "xYearCoef": 0.08707738097582313,
+        "const": -175.23351790321763
     },
     {
         "country": "Rwanda",
-        "xYearCoef": 0.0438251232,
-        "const": -86.1920665
+        "xYearCoef": 0.010265476395605194,
+        "const": -0.2146968326389295
     },
     {
         "country": "Saint Helena",
@@ -846,18 +846,18 @@
     },
     {
         "country": "Saint Pierre and Miquelon",
-        "xYearCoef": 0.0235501851,
-        "const": -46.6551234
+        "xYearCoef": 0.09152881559999361,
+        "const": -174.3116272327017
     },
     {
         "country": "Samoa",
-        "xYearCoef": 0.0168706204,
-        "const": -33.2719442
+        "xYearCoef": -0.005080769098900559,
+        "const": 36.9676810592297
     },
     {
         "country": "Rep. of San Marino",
-        "xYearCoef": 0.0325823903,
-        "const": -64.2633915
+        "xYearCoef": 0.004481410593405338,
+        "const": 6.231934776046424
     },
     {
         "country": "Dem. Rep. of S\u00e3o Tom\u00e9 and Pr\u00edncipe",
@@ -866,33 +866,33 @@
     },
     {
         "country": "Saudi Arabia",
-        "xYearCoef": 0.0336768377,
-        "const": -66.5655182
+        "xYearCoef": 0.051347802065931404,
+        "const": -74.21874699329143
     },
     {
         "country": "Senegal",
-        "xYearCoef": 0.029402697,
-        "const": -57.7609664
+        "xYearCoef": 0.015269230791208444,
+        "const": -1.2076639638454643
     },
     {
         "country": "Rep. of Serbia",
-        "xYearCoef": 0.059025,
-        "const": -114.621275
+        "xYearCoef": 0.057264010859334157,
+        "const": -101.4553967219542
     },
     {
         "country": "Seychelles",
-        "xYearCoef": 0.017492808,
-        "const": -34.4954595
+        "xYearCoef": 0.02527353476923192,
+        "const": -22.18344453989237
     },
     {
         "country": "Sierra Leone",
-        "xYearCoef": 0.0255363156,
-        "const": -50.2950696
+        "xYearCoef": 0.009357326109891404,
+        "const": 8.490383498788661
     },
     {
         "country": "Singapore",
-        "xYearCoef": 0.0201453202,
-        "const": -39.6163276
+        "xYearCoef": 0.01761144703296723,
+        "const": -7.32069763307731
     },
     {
         "country": "Slovak Rep.",
@@ -901,38 +901,38 @@
     },
     {
         "country": "Rep. of Slovenia",
-        "xYearCoef": 0.0473486096,
-        "const": -92.0755115
+        "xYearCoef": 0.02072509151867778,
+        "const": -29.77912351492709
     },
     {
         "country": "Solomon Islands",
-        "xYearCoef": 0.0120326371,
-        "const": -23.7130867
+        "xYearCoef": -0.006394871736263143,
+        "const": 39.89212442681201
     },
     {
         "country": "Somalia",
-        "xYearCoef": 0.0292415653,
-        "const": -57.6220713
+        "xYearCoef": 0.013144139362637539,
+        "const": 3.4965784232963637
     },
     {
         "country": "South Africa",
-        "xYearCoef": 0.018371285,
-        "const": -36.1316219
+        "xYearCoef": -0.01819917573626095,
+        "const": 53.693916952521974
     },
     {
         "country": "Rep. of South Sudan",
-        "xYearCoef": -0.0432454545,
-        "const": 85.9802909
+        "xYearCoef": 0.04915091593406537,
+        "const": -68.75229614813074
     },
     {
         "country": "Spain",
-        "xYearCoef": 0.0295196192,
-        "const": -58.1343816
+        "xYearCoef": 0.0159303111868136,
+        "const": -16.70142595077004
     },
     {
         "country": "Sri Lanka",
-        "xYearCoef": 0.0233064516,
-        "const": -45.8827681
+        "xYearCoef": 0.025533791274724896,
+        "const": -22.519945642306944
     },
     {
         "country": "St. Kitts and Nevis",
@@ -951,48 +951,48 @@
     },
     {
         "country": "Sudan",
-        "xYearCoef": -0.0126636364,
-        "const": 25.8737091
+        "xYearCoef": 0.04915091593406537,
+        "const": -68.75229614813074
     },
     {
         "country": "Suriname",
-        "xYearCoef": 0.0306887361,
-        "const": -60.5560933
+        "xYearCoef": 0.023242857296704923,
+        "const": -18.66957173198122
     },
     {
         "country": "Sweden",
-        "xYearCoef": 0.0390456901,
-        "const": -77.0038543
+        "xYearCoef": -0.028722903296703347,
+        "const": 60.243877736263826
     },
     {
         "country": "Switzerland",
-        "xYearCoef": 0.0367743522,
-        "const": -72.4801123
+        "xYearCoef": -0.012698351650549073,
+        "const": 33.18603663438387
     },
     {
         "country": "Syrian Arab Rep.",
-        "xYearCoef": 0.0330455315,
-        "const": -65.3128171
+        "xYearCoef": 0.06522884619779883,
+        "const": -109.18829358559775
     },
     {
         "country": "Taiwan Province of China",
-        "xYearCoef": 0.02351523,
-        "const": -46.4759705
+        "xYearCoef": 0.040406959690108345,
+        "const": -71.78595509507386
     },
     {
         "country": "Rep. of Tajikistan",
-        "xYearCoef": 0.0360487208,
-        "const": -70.2498146
+        "xYearCoef": 0.0032066849692283994,
+        "const": -0.9252449388854461
     },
     {
         "country": "United Rep. of Tanzania",
-        "xYearCoef": 0.0207945003,
-        "const": -40.9713418
+        "xYearCoef": 0.0025294875164855245,
+        "const": 18.065905931314727
     },
     {
         "country": "Thailand",
-        "xYearCoef": 0.0230897409,
-        "const": -45.501461
+        "xYearCoef": 0.05756034810988794,
+        "const": -86.47874978691878
     },
     {
         "country": "Dem. Rep. of Timor-Leste",
@@ -1001,8 +1001,8 @@
     },
     {
         "country": "Togo",
-        "xYearCoef": 0.0258592279,
-        "const": -50.9022802
+        "xYearCoef": 0.01972472523076999,
+        "const": -11.158724271539947
     },
     {
         "country": "Tokelau",
@@ -1011,28 +1011,28 @@
     },
     {
         "country": "Tonga",
-        "xYearCoef": 0.0131740349,
-        "const": -25.9463068
+        "xYearCoef": 0.006309432417581184,
+        "const": 11.513248266266169
     },
     {
         "country": "Trinidad and Tobago",
-        "xYearCoef": 0.0200656849,
-        "const": -39.6007458
+        "xYearCoef": 0.024512912241759048,
+        "const": -21.22392566923235
     },
     {
         "country": "Tunisia",
-        "xYearCoef": 0.0357509783,
-        "const": -70.4396241
+        "xYearCoef": 0.015044230923075412,
+        "const": -8.301574936150875
     },
     {
         "country": "Turkey",
-        "xYearCoef": 0.0280489688,
-        "const": -55.4165788
+        "xYearCoef": 0.07120705125274356,
+        "const": -127.33459655405862
     },
     {
         "country": "Turkmenistan",
-        "xYearCoef": 0.0404320356,
-        "const": -78.7432863
+        "xYearCoef": 0.04715879116483021,
+        "const": -76.31621328394627
     },
     {
         "country": "Turks and Caicos Islands",
@@ -1046,43 +1046,43 @@
     },
     {
         "country": "Uganda",
-        "xYearCoef": 0.019814331,
-        "const": -39.0084151
+        "xYearCoef": 0.020523168593406905,
+        "const": -16.610319326813798
     },
     {
         "country": "Ukraine",
-        "xYearCoef": 0.070737931,
-        "const": -138.506549
+        "xYearCoef": 0.07562527472526973,
+        "const": -139.53801373596815
     },
     {
         "country": "United Arab Emirates",
-        "xYearCoef": 0.0282145426,
-        "const": -55.7355313
+        "xYearCoef": 0.03248452389010969,
+        "const": -34.77782754021938
     },
     {
         "country": "United Kingdom",
-        "xYearCoef": 0.025636753,
-        "const": -50.6026442
+        "xYearCoef": -0.03508663003076577,
+        "const": 78.47678387124594
     },
     {
         "country": "United States",
-        "xYearCoef": 0.025925119,
-        "const": -51.1408463
+        "xYearCoef": 0.03712222211428277,
+        "const": -63.246475978422765
     },
     {
         "country": "United States Virgin Islands",
-        "xYearCoef": 0.0203984664,
-        "const": -40.1988548
+        "xYearCoef": 0.03712222211428277,
+        "const": -63.246475978422765
     },
     {
         "country": "Uruguay",
-        "xYearCoef": 0.017526917,
-        "const": -34.5007638
+        "xYearCoef": -0.03182023835164658,
+        "const": 80.54212550472177
     },
     {
         "country": "Rep. of Uzbekistan",
-        "xYearCoef": 0.0401790879,
-        "const": -78.2289548
+        "xYearCoef": 0.034459890109885316,
+        "const": -53.87299450548505
     },
     {
         "country": "Vanuatu",
@@ -1091,13 +1091,13 @@
     },
     {
         "country": "Rep. Bolivariana de Venezuela",
-        "xYearCoef": 0.0188997356,
-        "const": -37.2812096
+        "xYearCoef": 0.013785988967034245,
+        "const": -1.2922338883541573
     },
     {
         "country": "Vietnam",
-        "xYearCoef": 0.0230268112,
-        "const": -45.4109549
+        "xYearCoef": 0.04018745378021857,
+        "const": -54.71521114615145
     },
     {
         "country": "Wallis and Futuna Islands",
@@ -1111,8 +1111,8 @@
     },
     {
         "country": "Western Sahara",
-        "xYearCoef": 0.0303029085,
-        "const": -59.5992056
+        "xYearCoef": 0.01841245421978032,
+        "const": -12.771170343846348
     },
     {
         "country": "World",
@@ -1121,12 +1121,12 @@
     },
     {
         "country": "Rep. of Yemen",
-        "xYearCoef": 0.0180467742,
-        "const": -35.5133613
+        "xYearCoef": 0.028466300175822412,
+        "const": -28.69186226164487
     },
     {
         "country": "Zambia",
-        "xYearCoef": 0.0227603384,
-        "const": -44.7988502
+        "xYearCoef": -0.030873077120875416,
+        "const": 82.61089233032236
     }
 ]
