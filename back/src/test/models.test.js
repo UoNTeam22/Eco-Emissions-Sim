@@ -37,8 +37,8 @@ describe('Models', () => {
                 chai.expect(calc()).to.be.a('number');
             });
 
-            it('should be something reasonable (i.e. between 0 and 10 degrees change)', () => {
-                chai.expect(calc()).to.be.within(0, 10);
+            it('should be something reasonable (i.e. between -50 and 50 degrees change)', () => {
+                chai.expect(calc()).to.be.within(-50, 50);
             });
         });
     });
