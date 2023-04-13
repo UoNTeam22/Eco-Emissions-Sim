@@ -16,7 +16,7 @@ class LoadTemperatures {
     ClientModel.getModels().then(async models => {
       for (let model of models) {
           let yearResults = await model.getResults({"time": 2023});
-          console.log(yearResults);
+          //console.log(yearResults);
           this.#processTemperatureData(yearResults);
       }
     });

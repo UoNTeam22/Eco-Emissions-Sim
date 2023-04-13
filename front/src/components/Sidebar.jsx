@@ -8,6 +8,7 @@ import FactorsList from './FactorsList.jsx';
 import ClientModel from '../api/models.js';
 import countries from "../data/countries.json";
 import keys from "./Keys";
+import view from "./View.jsx";
 
 // CSS
 import '../styles/Sidebar.css';
@@ -55,7 +56,8 @@ export default class Sidebar extends Component {
 
         ClientModel.getModels().then(async models => {
             for (let model of models) {
-                // Current the only one is "ChangeTemperatureTimeModel"
+                let timeRef = view.getTimeRef;
+                console.log(timeRef);
                 let yearResults = await model.getResults({"time": 2030});
                 //console.log(yearResults);
 
