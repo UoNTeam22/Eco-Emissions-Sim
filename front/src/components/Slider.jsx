@@ -1,4 +1,4 @@
-function NewSlider({ sliderState, minRange, maxRange, step }) {
+function Slider({ sliderState, minRange, maxRange, step }) {
     function updateSetFunction(event) {
       sliderState.setFunction(Number(event.target.value));
     }
@@ -10,8 +10,6 @@ function NewSlider({ sliderState, minRange, maxRange, step }) {
           min={minRange}
           max={maxRange}
           value={sliderState.setValue}
-          class="slider"
-          id="myRange"
           step={step}
           onChange={updateSetFunction}
         />
@@ -19,5 +17,5 @@ function NewSlider({ sliderState, minRange, maxRange, step }) {
     );
   }
   
-  export default NewSlider;
+  export default Slider;
   

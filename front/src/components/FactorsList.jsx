@@ -2,7 +2,7 @@
 import React, { useState} from 'react';
 
 // Local components
-import NewSlider from './NewSlider.jsx';
+import Slider from './Slider.jsx';
 // CSS
 import '../styles/Slider.css';
 import '../styles/FactorsList.css';
@@ -40,7 +40,7 @@ function FactorsList({ sliderStates }) {
               <h1 className="name">{item.name}: {sliderStates[index].setValue} {item.units}</h1>
             </div>
             <div className="slider">
-              <NewSlider sliderState={sliderStates[index]} minRange={item.start} maxRange={item.end} step={item.step}/>
+              <Slider sliderState={sliderStates[index]} minRange={item.start} maxRange={item.end} step={item.step}/>
             </div>
           </div>
         );
