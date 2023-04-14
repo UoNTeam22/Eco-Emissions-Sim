@@ -8,7 +8,7 @@ import FactorsList from './FactorsList.jsx';
 import ClientModel from '../api/models.js';
 import countries from "../data/countries.json";
 import keys from "./Keys";
-import view from "./View.jsx";
+import timescale from "./Timescale";
 
 // CSS
 import '../styles/Sidebar.css';
@@ -21,10 +21,24 @@ export class Factors extends Component {
         return (
             <div>
                 <div className="slider">
-                    <Slider name="Fossil Fuels" value={0} rangeStart={-100} rangeEnd={100} step={20}/>
+                    <Slider 
+                    name="Fossil Fuels" 
+                    value={0} 
+                    rangeStart={-100} 
+                    rangeEnd={100} 
+                    step={20} 
+                    onChange={console.log}
+                    />
                 </div>
                 <div className="slider">
-                    <Slider name="Vegetarianism" value={0} rangeStart={0} rangeEnd={7} step={1}/>
+                    <Slider 
+                    name="Vegetarianism" 
+                    value={0} 
+                    rangeStart={0} 
+                    rangeEnd={7} 
+                    step={1} 
+                    onChange={console.log}
+                    />
                 </div>
             </div>
         )
@@ -56,9 +70,10 @@ export default class Sidebar extends Component {
 
         ClientModel.getModels().then(async models => {
             for (let model of models) {
-                let timeRef = view.getTimeRef;
+                let timeRef = timescale.timeRef;
                 console.log(timeRef);
-                let yearResults = await model.getResults({"time": 2030});
+                console.log(timeRef.props.value);
+                let yearResults = await model.getResults({"time": timeRef.props.value});
                 //console.log(yearResults);
 
                 for (let i = 0; i < countries.features.length; i++) {

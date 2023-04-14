@@ -41,6 +41,7 @@ export default class SimpleWrappedSlider extends Component {
 
     #handleChange(e) {
         this.state.onChange(e.detail.value);
+        console.log(e.detail.value);
     }
 
     componentDidMount() {
@@ -50,4 +51,18 @@ export default class SimpleWrappedSlider extends Component {
     componentWillUnmount() {
         this.sliderRef.current.removeEventListener('change', this.#handleChange.bind(this));
     }
+
+    /*componentDidMount() {
+        let sliders = document.querySelectorAll('toolcool-range-slider');
+        sliders.forEach(slider => {
+            slider.addEventListener('change', this.#handleChange.bind(this));
+        });
+    }
+
+    componentWillUnmount() {
+        let sliders = document.querySelectorAll('toolcool-range-slider');
+        sliders.forEach(slider => {
+            slider.removeEventListener('change', this.#handleChange.bind(this));
+        });
+    }*/
 }
