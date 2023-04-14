@@ -5,13 +5,14 @@ import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import View from "./View";
 import PlayerService from "./PlayerService";
+import LoadTemperature from "./LoadTemperatures";
 
 function All() {
   //create some states to use
   const [height, setHeight] = useState(0);
   const [weight, setWeight] = useState(0);
   const [year, setYear] = useState(2023);
-  const [combinedPlayerData, setCombinedPlayerData] = useState(0);
+  const [combinedPlayerData, setCombinedPlayerData] = useState([]);
 
   //call this function on page load to have some data there by default
   useEffect(() => {
@@ -20,9 +21,9 @@ function All() {
 
   //call service class to get some data
   function callCombinedData() {
-    const playerService = new PlayerService();
-    const res = playerService.combinePlayerData(height, weight, year);
-    setCombinedPlayerData(res);
+    const loadTemperature = new LoadTemperature();
+    loadTemperature.load((countries) => setCombinedPlayerData(countries), year);
+    console.log(combinedPlayerData);
   }
 
   //create some nicer state variables to lower prop count
@@ -53,8 +54,8 @@ function All() {
       <Player combinedPlayerData={combinedPlayerData} />
       <input type="button" onClick={callCombinedData} value="Apply" /> */}
       <Navbar />
-      <Sidebar sliderStates={allSliderStates}/>
-      <View sliderStates={allSliderStates}/>
+      <Sidebar sliderStates={allSliderStates} applyOnclick={callCombinedData}/>
+      <View sliderStates={allSliderStates} combinedPlayerData={combinedPlayerData}/>
     </>
   );
 }

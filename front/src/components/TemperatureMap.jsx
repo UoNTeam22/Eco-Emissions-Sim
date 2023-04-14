@@ -4,8 +4,8 @@ import LoadTemperature from "./LoadTemperatures";
 import ColorKey from "./ColorKey";
 import KeyItems from "./Keys";
 
-function TemperatureMap({ sliderStates }) {
-  
+function TemperatureMap({ sliderStates }, {combinedPlayerData}) {
+  //const countries = combinedPlayerData; // This data is undefined?
   const [countries, setCountries] = useState([]);
 
   function load() {
