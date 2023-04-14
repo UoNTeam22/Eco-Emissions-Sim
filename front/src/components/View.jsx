@@ -3,26 +3,18 @@ import React, { Component } from 'react';
 
 // Local components
 import TemperatureMap from './TemperatureMap';
-import Slider from './Slider.jsx';
+import Timescale from './Timescale';
 
 // CSS
 import '../styles/View.css';
-import '../styles/Slider.css';
-
-export class Timescale extends Component {
-    state = {}
-
-    render() {
-        return (
-            <div className="slider">
-                <Slider name="Timescale" value={2023} rangeStart={2023} rangeEnd={2050} width="calc(100vw - 350px)"/>
-            </div>
-        )
-    }
-}
 
 class View extends Component {
     state = {}
+    time = React.createRef();
+
+    getTimeRef() {
+        return this.time.current; // Why is this returning undefined?
+    }
 
     render() {
         return (
@@ -31,7 +23,7 @@ class View extends Component {
                     <TemperatureMap />
                 </div>
                 <div className="timescale">
-                    <Timescale />
+                    <Timescale ref={this.time}/>
                 </div>
             </div>
         );
