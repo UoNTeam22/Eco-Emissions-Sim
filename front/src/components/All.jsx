@@ -10,7 +10,7 @@ function All() {
   //create some states to use
   const [height, setHeight] = useState(0);
   const [weight, setWeight] = useState(0);
-  const [year, setYear] = useState(2020);
+  const [year, setYear] = useState(2023);
   const [combinedPlayerData, setCombinedPlayerData] = useState(0);
 
   //call this function on page load to have some data there by default
@@ -54,7 +54,7 @@ function All() {
       <input type="button" onClick={callCombinedData} value="Apply" /> */}
       <Navbar />
       <Sidebar sliderStates={allSliderStates}/>
-      <View />
+      <View sliderStates={allSliderStates}/>
     </>
   );
 }

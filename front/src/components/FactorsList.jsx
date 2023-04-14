@@ -2,7 +2,6 @@
 import React, { useState} from 'react';
 
 // Local components
-import Slider from './Slider.jsx';
 import NewSlider from './NewSlider.jsx';
 // CSS
 import '../styles/Slider.css';

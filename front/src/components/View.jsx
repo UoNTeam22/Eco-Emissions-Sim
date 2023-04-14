@@ -1,33 +1,26 @@
 // Body component
-import React, { Component } from 'react';
+import React from 'react';
 
 // Local components
 import TemperatureMap from './TemperatureMap';
-import Timescale from './Timescale';
+import NewSlider from './NewSlider';
 
 // CSS
 import '../styles/View.css';
 
-class View extends Component {
-    state = {}
-    time = React.createRef();
-
-    getTimeRef() {
-        return this.time.current; // Why is this returning undefined?
-    }
-
-    render() {
-        return (
-            <div className="view">
-                <div className="map">
-                    <TemperatureMap />
-                </div>
-                <div className="timescale">
-                    <Timescale ref={this.time}/>
-                </div>
+function View({ sliderStates }) {
+    return (
+        <div className="view">
+            <div className="map">
+                <TemperatureMap />
             </div>
-        );
-    }
+            <div className="timescale">
+                {/* <Timescale /> */}
+                <p>{sliderStates[sliderStates.length - 1].setValue}</p>
+                <NewSlider sliderState={sliderStates[sliderStates.length - 1]} minRange={2023} maxRange={2050}/>
+            </div>
+        </div>
+    );
 }
 
 export default View;
