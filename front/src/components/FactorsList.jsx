@@ -3,17 +3,17 @@ import React, { useState} from 'react';
 
 // Local components
 import Slider from './Slider.jsx';
-
+import NewSlider from './NewSlider.jsx';
 // CSS
 import '../styles/Slider.css';
 import '../styles/FactorsList.css';
 
-const FactorsList = () => {
+function FactorsList({ sliderStates }) {
 
   const [checkedList, setCheckedList] = useState([]);
   const factors = [
-    {id:1, name:"Fossil Fuels", value:0, start:-100, end:100, step:20},
-    {id:2, name:"Vegetarianism", value:0, start:0, end:7, step:1},
+    {id:1, name:"Fossil Fuels", value:0, start:-100, end:100, step:20, units:"%"},
+    {id:2, name:"Vegetarianism", value:0, start:0, end:7, step:1, units:"days"},
   ];
 
   const selected = (event) => {
@@ -38,10 +38,10 @@ const FactorsList = () => {
           <div key={item.id} className="checkbox-wrapper">
             <div className="checkbox-name">
               <input type="checkbox" name="factors" value={item.name} onChange={selected}/>
-              <h1 className="name">{item.name}</h1>
+              <h1 className="name">{item.name}: {sliderStates[index].setValue} {item.units}</h1>
             </div>
             <div className="slider">
-              <Slider name={item.name} value={item.value} rangeStart={item.start} rangeEnd={item.end} step={item.step}/>
+              <NewSlider sliderState={sliderStates[index]} minRange={item.start} maxRange={item.end} step={item.step}/>
             </div>
           </div>
         );
