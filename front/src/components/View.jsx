@@ -12,7 +12,7 @@ function View({ sliderStates }) {
     return (
         <div className="view">
             <div className="map">
-                <TemperatureMap />
+                <TemperatureMap sliderStates={sliderStates}/>
             </div>
             <div className="timescale">
                 <p>{sliderStates[sliderStates.length - 1].setValue}</p>

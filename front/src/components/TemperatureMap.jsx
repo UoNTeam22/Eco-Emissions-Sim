@@ -4,13 +4,14 @@ import LoadTemperature from "./LoadTemperatures";
 import ColorKey from "./ColorKey";
 import KeyItems from "./Keys";
 
-const TemperatureMap = () => {
+function TemperatureMap({ sliderStates }) {
   
   const [countries, setCountries] = useState([]);
 
-  const load = () => {
+  function load() {
     const loadTemperature = new LoadTemperature();
-    loadTemperature.load((countries) => setCountries(countries));
+    const timescale = sliderStates[sliderStates.length - 1];
+    loadTemperature.load((countries) => setCountries(countries), timescale.setValue);
   };
 
   /** useEffect: Perform side effect for loading the correct country colors according to key. */
