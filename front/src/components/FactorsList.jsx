@@ -33,14 +33,20 @@ function FactorsList({ sliderStates }) {
   return (
     <div className="card-body">
       {factors.map((item, index) => {
+        // Get the slider state
+        let sliderState = sliderStates[index];
+
+        // Sometimes the sliders are not ready yet
+        if (!sliderState) return null;
+
         return (
           <div key={item.id} className="checkbox-wrapper">
             <div className="checkbox-name">
               <input type="checkbox" name="factors" value={item.name} onChange={selected}/>
-              <h1 className="name">{item.name}: {sliderStates[index].setValue} {item.units}</h1>
+              <h1 className="name">{item.name}: {sliderState.setValue} {item.units}</h1>
             </div>
             <div className="slider">
-              <Slider sliderState={sliderStates[index]} minRange={item.start} maxRange={item.end} step={item.step}/>
+              <Slider sliderState={sliderState} minRange={item.start} maxRange={item.end} step={item.step}/>
             </div>
           </div>
         );
