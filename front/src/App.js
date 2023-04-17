@@ -1,9 +1,9 @@
 import All from './components/All';
 
 function App() {
-  return (
-    <All />
-  );
+    return (
+        <All />
+    );
 }
 
 export default App;

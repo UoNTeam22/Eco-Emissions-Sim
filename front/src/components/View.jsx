@@ -8,15 +8,15 @@ import Slider from './Slider';
 // CSS
 import '../styles/View.css';
 
-function View({ sliderStates }, {combinedPlayerData}) {
+function View({ sliderStates }, { combinedPlayerData }) {
     return (
         <div className="view">
             <div className="map">
-                <TemperatureMap sliderStates={sliderStates} combinedPlayerData={combinedPlayerData}/>
+                <TemperatureMap sliderStates={sliderStates} combinedPlayerData={combinedPlayerData} />
             </div>
             <div className="timescale">
                 <p>{sliderStates[sliderStates.length - 1].setValue}</p>
-                <Slider sliderState={sliderStates[sliderStates.length - 1]} minRange={2023} maxRange={2050}/>
+                <Slider sliderState={sliderStates[sliderStates.length - 1]} minRange={2023} maxRange={2050} />
             </div>
         </div>
     );

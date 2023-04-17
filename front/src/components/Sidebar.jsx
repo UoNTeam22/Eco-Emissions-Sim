@@ -9,7 +9,7 @@ import FactorsList from './FactorsList.jsx';
 import '../styles/Sidebar.css';
 import '../styles/Slider.css';
 
-function Sidebar({ sliderStates }, {applyOnclick}) {
+function Sidebar({ sliderStates }, { applyOnclick }) {
 
     /**
      * Triggered when the apply button is clicked
@@ -22,7 +22,7 @@ function Sidebar({ sliderStates }, {applyOnclick}) {
     return (
         <div className="sidebar">
             <div className="body">
-                <FactorsList sliderStates={sliderStates}/>
+                <FactorsList sliderStates={sliderStates} />
                 <div className="overlay">
                     <ApplyButton onClick={applyChanges} text="Apply" />
                 </div>

@@ -68,7 +68,7 @@ export default class ModelClient {
     /**
      * Gets the name of the model
      * @returns {Promise<String>} the name of the model
-    */ 
+    */
     async getName() {
         const base = await this.getBase();
         return base.name;
