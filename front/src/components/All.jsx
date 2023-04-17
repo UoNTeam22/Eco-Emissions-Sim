@@ -21,9 +21,12 @@ function All() {
 
   //call service class to get some data
   function callCombinedData() {
+    console.debug('Retrieving data for year: ' + year);
     const loadTemperature = new LoadTemperature();
-    loadTemperature.load((countries) => setCombinedPlayerData(countries), year);
-    console.log(combinedPlayerData);
+    loadTemperature.load((countries) => {
+      setCombinedPlayerData(countries);
+      console.debug("Recieved data back:", countries);
+    }, year);
   }
 
   //create some nicer state variables to lower prop count
@@ -54,7 +57,7 @@ function All() {
       <Player combinedPlayerData={combinedPlayerData} />
       <input type="button" onClick={callCombinedData} value="Apply" /> */}
       <Navbar />
-      <Sidebar sliderStates={allSliderStates} applyOnclick={callCombinedData}/>
+      <Sidebar sliderStates={allSliderStates} onApply={callCombinedData}/>
       <View sliderStates={allSliderStates} combinedPlayerData={combinedPlayerData}/>
     </>
   );
