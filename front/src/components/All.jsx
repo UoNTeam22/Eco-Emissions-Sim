@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import * as React from "react";
-import Player from "./Player";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import View from "./View";
-import PlayerService from "./PlayerService";
 import TemperatureDataFactory from "./LoadTemperatures";
 
 function All() {
