@@ -16,6 +16,7 @@ function Sidebar({ sliderStates }, {applyOnclick}) {
      */
     function applyChanges() {
         console.log('apply changes');
+        if (applyOnclick) applyOnclick();
     }
 
     return (
@@ -23,7 +24,7 @@ function Sidebar({ sliderStates }, {applyOnclick}) {
             <div className="body">
                 <FactorsList sliderStates={sliderStates}/>
                 <div className="overlay">
-                    <ApplyButton onClick={applyOnclick} text="Apply" />
+                    <ApplyButton onClick={applyChanges} text="Apply" />
                 </div>
             </div>
         </div >
