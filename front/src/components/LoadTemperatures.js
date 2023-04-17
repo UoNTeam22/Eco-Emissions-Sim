@@ -2,7 +2,7 @@ import keys from "./Keys";
 import countries from "../data/countries.json";
 import ClientModel from '../api/models.js';
 
-class LoadTemperatures {
+class TemperatureDataFactory {
     /** setState is null until all the temperature data is processed. */
     setState = null;
     mapCountries = countries.features;
@@ -47,4 +47,4 @@ class LoadTemperatures {
 
 }
 
-export default LoadTemperatures;
+export default TemperatureDataFactory;
