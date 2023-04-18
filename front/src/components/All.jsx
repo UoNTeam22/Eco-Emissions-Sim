@@ -4,38 +4,41 @@ import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import View from "./View";
 import TemperatureDataFactory from "./LoadTemperatures";
+import countriesJSON from "../data/countries.json";
 
 function All() {
     //create some states to use
-    const [height, setHeight] = useState(0);
-    const [weight, setWeight] = useState(0);
+    const [slider1, setSlider1] = useState(0);
+    const [slider2, setSlider2] = useState(0);
     const [year, setYear] = useState(2023);
-    const [combinedPlayerData, setCombinedPlayerData] = useState([]);
+    const [countriesData, setCountries] = useState([]);
 
     //call this function on page load to have some data there by default
     useEffect(() => {
-        callCombinedData();
+        callCountriesData();
     }, []);
 
     //call service class to get some data
-    function callCombinedData() {
-        console.debug('Retrieving data for year: ' + year);
+    function callCountriesData() {
+        //console.log('Retrieving data for year: ' + year);
+        console.log("Before: ", countriesData);
         const loadTemperature = new TemperatureDataFactory();
         loadTemperature.load((countries) => {
-            setCombinedPlayerData(countries);
-            console.debug("Recieved data back:", countries);
+            setCountries(countries)
+            //console.log("Recieved data back:", countries)
         }, year);
+        console.log("After: ", countriesData); // This is still empty [], why?
     }
 
     //create some nicer state variables to lower prop count
-    const heightState = {
-        setValue: height,
-        setFunction: setHeight,
+    const slider1State = {
+        setValue: slider1,
+        setFunction: setSlider1,
     };
 
-    const weightState = {
-        setValue: weight,
-        setFunction: setWeight,
+    const slider2State = {
+        setValue: slider2,
+        setFunction: setSlider2,
     };
 
     const yearState = {
@@ -44,19 +47,16 @@ function All() {
     };
 
     const allSliderStates = [
-        heightState,
-        weightState,
+        slider1State,
+        slider2State,
         yearState,
     ];
 
     return (
         <>
-            {/* <Sidebar sliderStates={allSliderStates} />
-      <Player combinedPlayerData={combinedPlayerData} />
-      <input type="button" onClick={callCombinedData} value="Apply" /> */}
             <Navbar />
-            <Sidebar sliderStates={allSliderStates} onApply={callCombinedData} />
-            <View sliderStates={allSliderStates} combinedPlayerData={combinedPlayerData} />
+            <Sidebar sliderStates={allSliderStates} onApply={callCountriesData} />
+            <View sliderStates={allSliderStates} countriesData={countriesData} />
         </>
     );
 }

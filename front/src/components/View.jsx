@@ -8,11 +8,11 @@ import Slider from './Slider';
 // CSS
 import '../styles/View.css';
 
-function View({ sliderStates }, { combinedPlayerData }) {
+function View({ sliderStates, countriesData }) {
     return (
         <div className="view">
             <div className="map">
-                <TemperatureMap sliderStates={sliderStates} combinedPlayerData={combinedPlayerData} />
+                <TemperatureMap countries={countriesData}/>
             </div>
             <div className="timescale">
                 <p>{sliderStates[sliderStates.length - 1].setValue}</p>
