@@ -7,26 +7,10 @@ function TemperatureMap({countries}) {
 
     return (
         <div>
-          {countries.length === 0 ? (
-            <div
-              style={{
-                height: "100vh",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              Loading...
-          </div>
-          ) : (
-            <div>
-              <Map countries={countries} />
-              <ColorKey keyItems={[...KeyItems]} />
-            </div>
-          )}
+            <Map countries={countries} />
+            <ColorKey keyItems={[...KeyItems]} />
         </div>
     );
-
 };
 
 export default TemperatureMap;
