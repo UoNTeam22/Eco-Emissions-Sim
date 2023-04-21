@@ -1,11 +1,19 @@
 // Map component
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { MapContainer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "../styles/Map.css";
 
 const Map = ({ countries }) => {
+
+    const geoJson = useRef(null);
+
+    useEffect(() => {
+        if (geoJson.current) {
+            geoJson.current.clearLayers().addData(countries);
+        }
+    }, [countries]);
 
     const onEachCountry = (country, layer) => {
         layer.options.fillColor = country.properties.color;
@@ -17,9 +25,10 @@ const Map = ({ countries }) => {
     return (
         <MapContainer className="map-container" zoom={2} center={[20, 0]}>
             <GeoJSON
-                className="map-style"
-                data={countries}
-                onEachFeature={onEachCountry}
+                ref={geoJson} 
+                className="map-style" 
+                data={countries} 
+                onEachFeature={onEachCountry} 
             />
         </MapContainer>
     );
