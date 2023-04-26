@@ -1,8 +1,8 @@
-import All from './components/All';
+import Simulator from "./components/Simulator.jsx";
 
 function App() {
     return (
-        <All />
+        <Simulator />
     );
 }
 

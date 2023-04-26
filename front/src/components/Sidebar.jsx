@@ -1,22 +1,15 @@
-// Sidebar component
-import React from 'react';
+import React from "react";
+import FactorsList from "./FactorsList.jsx";
+import "../styles/Sidebar.css";
 
-// Local components
-import ApplyButton from './ApplyButton.jsx';
-import FactorsList from './FactorsList.jsx';
-
-// CSS
-import '../styles/Sidebar.css';
-import '../styles/Slider.css';
-
+// Sidebar component containing Factors list and Apply button.
 function Sidebar({ sliderStates, onApply }) {
-
     return (
         <div className="sidebar">
             <div className="body">
                 <FactorsList sliderStates={sliderStates} />
                 <div className="overlay">
-                    <ApplyButton onClick={onApply} text="Apply" />
+                    <button className="button" onClick={onApply}>Apply</button>
                 </div>
             </div>
         </div >

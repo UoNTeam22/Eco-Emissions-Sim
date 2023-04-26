@@ -1,13 +1,9 @@
-// Body component
-import React from 'react';
+import React from "react";
+import TemperatureMap from "./TemperatureMap.jsx";
+import Slider from "./Slider.jsx";
+import "../styles/View.css";
 
-// Local components
-import TemperatureMap from './TemperatureMap';
-import Slider from './Slider';
-
-// CSS
-import '../styles/View.css';
-
+// View component containing Temperature Map and timescale slider.
 function View({ sliderStates, countriesData }) {
     return (
         <div className="view">

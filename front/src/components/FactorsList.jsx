@@ -1,24 +1,25 @@
-// FactorsList component
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Slider from "./Slider.jsx";
+import "../styles/Slider.css";
+import "../styles/FactorsList.css";
 
-// Local components
-import Slider from './Slider.jsx';
-// CSS
-import '../styles/Slider.css';
-import '../styles/FactorsList.css';
-
+// FactorLists component to keep track of selected factors.
 function FactorsList({ sliderStates }) {
 
+    // Create state for selected list of factors.
     const [checkedList, setCheckedList] = useState([]);
+
+    // Fators list with start, end and step values for each factor.
+    // Used to create slider for each factor.
     const factors = [
         { id: 1, name: "Fossil Fuels", value: 0, start: -100, end: 100, step: 20, units: "%" },
         { id: 2, name: "Vegetarianism", value: 0, start: 0, end: 7, step: 1, units: "days" },
     ];
 
+    // Maintains list of selected factors.
     const selected = (event) => {
         const value = event.target.value;
         const isChecked = event.target.checked;
-
         if (isChecked) {
             //Add checked item into checkList
             setCheckedList([...checkedList, value]);
@@ -30,15 +31,15 @@ function FactorsList({ sliderStates }) {
         console.log(checkedList);
     };
 
+    // Mapping factors list to create silders.
     return (
         <div className="card-body">
             {factors.map((item, index) => {
-                // Get the slider state
+                // Get the slider state.
                 let sliderState = sliderStates[index];
-
-                // Sometimes the sliders are not ready yet
+                // Sometimes the sliders are not ready yet.
                 if (!sliderState) return null;
-
+                // Returing factor name and slider for each factor.
                 return (
                     <div key={item.id} className="checkbox-wrapper">
                         <div className="checkbox-name">
