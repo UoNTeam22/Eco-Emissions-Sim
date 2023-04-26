@@ -3,7 +3,7 @@ import * as React from "react";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import View from "./View";
-import TemperatureDataFactory from "./LoadTemperatures";
+import TemperatureDataFactory from "./TemperatureDataFactory.js";
 
 function All() {
     // Create states for factor sliders.
