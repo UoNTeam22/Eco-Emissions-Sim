@@ -3,17 +3,13 @@
     --apply-button-padding: 5px;
     --side-bar-background-color: #475492;
     --button-border-width: 2.5px;
-
     --nav-bar-height: 80px;
 }
 
 .sidebar {
     width: var(--sidebar-width);
     background-color: var(--side-bar-background-color);
-
-    /* This is terrible */
     height: calc(100% - var(--nav-bar-height));
-
     position: fixed;
     top: auto;
     left: 0;
@@ -26,31 +22,21 @@
 
 .sidebar>.body>*>.button {
     cursor: pointer;
-}
-
-.sidebar>.body>*>.button {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    text-decoration: none;
-    user-select: none;
+    background-color: #71ff1a;
+    border: var(--button-border-width) solid black;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: var(--apply-button-padding);
+    width: 80%;
+    height: 60px;
 }
 
 .sidebar>.body>*>.button.apply:hover {
     background-color: #A0FF66;
-    /* TODO add transition */
-}
-
-.sidebar>.body>*>.button.apply {
-    background-color: #71ff1a;
-    border: var(--button-border-width) solid black;
-    text-align: center;
-
-    margin: var(--apply-button-padding);
-
-    width: 80%;
-    height: 60px;
 }
 
 .sidebar>.body>.overlay {
@@ -59,14 +45,9 @@
     left: 0;
     bottom: 0;
     right: 0;
-
     display: flex;
-
     /* Make the button appear at the bottom */
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-
-    /* Idk if this is gonna cause issues in the future but it works for now at least ;) */
-    z-index: -1;
 }

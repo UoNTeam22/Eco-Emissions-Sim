@@ -10,7 +10,7 @@ function Sidebar({ sliderStates, onApply }) {
             <div className="body">
                 <FactorsList sliderStates={sliderStates} />
                 <div className="overlay">
-                    <ApplyButton onClick={onApply} text="Apply" />
+                    <button className="button" onClick={onApply}>Apply</button>
                 </div>
             </div>
         </div >
