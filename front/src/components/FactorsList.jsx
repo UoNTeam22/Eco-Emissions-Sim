@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Slider from './Slider.jsx';
-import '../styles/Slider.css';
-import '../styles/FactorsList.css';
+import React, { useState } from "react";
+import Slider from "./Slider.jsx";
+import "../styles/Slider.css";
+import "../styles/FactorsList.css";
 
 // FactorLists component to keep track of selected factors.
 function FactorsList({ sliderStates }) {

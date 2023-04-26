@@ -1,7 +1,7 @@
 import React from "react";
-import Map from "./Map";
-import ColorKey from "./ColorKey";
-import KeyItems from "./Keys";
+import Map from "./Map.jsx";
+import ColorKey from "./ColorKey.jsx";
+import KeyItems from "./Keys.js";
 
 // Temperature Map component containing map and its colour key.
 function TemperatureMap({countries}) {

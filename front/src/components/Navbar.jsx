@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import '../styles/Navbar.css';
+import React from "react";
+import "../styles/Navbar.css";
 
 // Navbar component containing 
 function Navbar() {

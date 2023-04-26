@@ -1,7 +1,7 @@
-import React from 'react';
-import TemperatureMap from './TemperatureMap';
-import Slider from './Slider';
-import '../styles/View.css';
+import React from "react";
+import TemperatureMap from "./TemperatureMap.jsx";
+import Slider from "./Slider.jsx";
+import "../styles/View.css";
 
 // View component containing Temperature Map and timescale slider.
 function View({ sliderStates, countriesData }) {

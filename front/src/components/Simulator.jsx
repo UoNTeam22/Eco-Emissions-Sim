@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import * as React from "react";
-import Sidebar from "./Sidebar";
-import Navbar from "./Navbar";
-import View from "./View";
+import Sidebar from "./Sidebar.jsx";
+import Navbar from "./Navbar.jsx";
+import View from "./View.jsx";
 import TemperatureDataFactory from "./TemperatureDataFactory.js";
 
 function All() {

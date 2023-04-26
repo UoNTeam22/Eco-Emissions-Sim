@@ -1,6 +1,6 @@
-import keys from "./Keys";
+import keys from "./Keys.js";
 import countries from "../data/countries.json";
-import ClientModel from '../api/models.js';
+import ClientModel from "../api/models.js";
 
 class TemperatureDataFactory {
     // setState is null until all the temperature data is processed.
