@@ -1,33 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Map from "./Map";
 import ColorKey from "./ColorKey";
 import KeyItems from "./Keys";
 
+// Temperature Map component containing map and its colour key.
 function TemperatureMap({countries}) {
-  
     return (
-        countries.length === 0? <div><p>click the apply button to start</p></div>:
         <div>
-          {countries.length === 0 ? (
-            <div
-              style={{
-                height: "100vh",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              Loading...
-          </div>
-          ) : (
-            <div>
-              <Map countries={countries} />
-              <ColorKey keyItems={[...KeyItems]} />
-            </div>
-          )}
+            <Map countries={countries} />
+            <ColorKey keyItems={[...KeyItems]} />
         </div>
     );
-
 };
 
 export default TemperatureMap;
