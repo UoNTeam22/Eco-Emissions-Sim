@@ -1,22 +1,15 @@
-import React from 'react';
+import { useEffect, useState } from "react";
 
-class ApplyButton extends React.Component {
-    state = {
-        onClick: this.props.onClick || (() => { }),
-        text: this.props.text || 'Apply',
-    }
+function ApplyButton(props) {
+    const [text, setText] = useState("Apply"); // Text to display
 
-    render() {
-        return (
-            <div className="button apply" onClick={
-                this.state.onClick
-            }>
-                <h1>
-                    {this.state.text}
-                </h1>
-            </div>
-        );
-    }
+    return (
+        <div className="button apply" onClick={props.onClick}>
+            <h1>
+                {text}
+            </h1>
+        </div>
+    );
 }
 
 export default ApplyButton;
