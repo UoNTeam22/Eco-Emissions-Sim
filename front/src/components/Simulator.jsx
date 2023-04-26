@@ -5,7 +5,7 @@ import Navbar from "./Navbar.jsx";
 import View from "./View.jsx";
 import TemperatureDataFactory from "./TemperatureDataFactory.js";
 
-function All() {
+export default function Simulator() {
     // Create states for factor sliders.
     const [slider1, setSlider1] = useState(0);
     const [slider2, setSlider2] = useState(0);
@@ -60,5 +60,3 @@ function All() {
         </>
     );
 }
-
-export default All;
