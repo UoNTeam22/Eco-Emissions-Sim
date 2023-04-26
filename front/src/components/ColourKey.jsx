@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/ColorKey.css";
+import "../styles/ColourKey.css";
 
 // ColourKey component used to create map keys.
 function ColourKey({ keyItems }) {
