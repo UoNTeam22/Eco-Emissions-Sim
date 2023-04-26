@@ -23,24 +23,14 @@ const Map = ({ countries }) => {
     };
 
     return (
-        <div>
-            {countries.length === 0 ? (
-                <div className="load-container">Loading...</div>
-            ) : (
-            <div>
-                <MapContainer className="map-container" zoom={2} center={[20, 0]}>
-                    <GeoJSON
-                        ref={geoJson} 
-                        className="map-style" 
-                        data={countries} 
-                        onEachFeature={onEachCountry} 
-                    />
-                </MapContainer>
-            </div>
-          )}
-        </div>
-
-        
+        <MapContainer className="map-container" zoom={2} center={[20, 0]}>
+            <GeoJSON
+                ref={geoJson} 
+                className="map-style" 
+                data={countries} 
+                onEachFeature={onEachCountry} 
+            />
+        </MapContainer>
     );
 
 };

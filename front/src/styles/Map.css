@@ -7,15 +7,6 @@
     width: calc(100vw - 300px - 1vw);
 }
 
-.load-container {
-    height: calc(100vh - 60px - 80px - 7vh);
-    width: calc(100vw - 300px - 1vw);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-
 .map-style {
     background-color: white;
     fill-opacity: 1;
