@@ -3,7 +3,7 @@ import App from '../App';
 
 test('renders Title', () => {
     render(<App />);
-    const linkElement = screen.getByText(/Eco Emissions Sim/i);
+    const linkElement = screen.getByText(/Climate Change Modelling/i);
     expect(linkElement).toBeInTheDocument();
 });
 
