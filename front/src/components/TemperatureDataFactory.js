@@ -33,10 +33,10 @@ class TemperatureDataFactory {
             checkedList.forEach(factor => {
                 if(factor === "Fossil Fuels" && sliderStates[0].setValue !== 0) {
                     console.log("Considering ff");
-                    country.properties.temperature += (0.002 * sliderStates[0].setValue) - 6.2;
+                    country.properties.temperature += (0.0001782 * sliderStates[0].setValue) + 2.32 * Math.pow(10, -5);
                 } else if(factor === "Vegetarianism" && sliderStates[1].setValue !== 0) {
                     console.log("Considering veg");
-                    country.properties.temperature *= (-0.005 * sliderStates[1].setValue) + 0.7;
+                    country.properties.temperature *= (-0.05292 * sliderStates[1].setValue) + 1;
                 }
             });
             this.#setCountryColor(country);
