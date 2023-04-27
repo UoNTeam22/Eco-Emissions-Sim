@@ -4,10 +4,7 @@ import "../styles/Slider.css";
 import "../styles/FactorsList.css";
 
 // FactorLists component to keep track of selected factors.
-function FactorsList({ sliderStates }) {
-
-    // Create state for selected list of factors.
-    const [checkedList, setCheckedList] = useState([]);
+function FactorsList({ sliderStates, factorListStates }) {
 
     // Fators list with start, end and step values for each factor.
     // Used to create slider for each factor.
@@ -21,14 +18,14 @@ function FactorsList({ sliderStates }) {
         const value = event.target.value;
         const isChecked = event.target.checked;
         if (isChecked) {
-            //Add checked item into checkList
-            setCheckedList([...checkedList, value]);
+            // Add checked item into factors list.
+            const newList = factorListStates.setValue.concat([value]);
+            factorListStates.setFunction(newList);
         } else {
-            //Remove unchecked item from checkList
-            const filteredList = checkedList.filter((item) => item !== value);
-            setCheckedList(filteredList);
+            // Remove unchecked item from factors list.
+            const filteredList = factorListStates.setValue.filter((item) => item !== value);
+            factorListStates.setFunction(filteredList);
         }
-        console.log(checkedList);
     };
 
     // Mapping factors list to create silders.

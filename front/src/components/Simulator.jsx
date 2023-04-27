@@ -19,6 +19,9 @@ export default function Simulator() {
     // Create state for map data
     const [countriesData, setCountries] = useState([]);
 
+    // Create state for selected list of factors.
+    const [checkedList, setCheckedList] = useState([]);
+
     // Calling useEffect function on page load to have data in map by default
     useEffect(() => {
         callCountriesData();
@@ -30,7 +33,7 @@ export default function Simulator() {
         const loadTemperature = new TemperatureDataFactory();
         loadTemperature.load((countries) => {
             setCountries(countries)
-        }, year);
+        }, year, checkedList, allSliderStates);
     }
 
     // Creating state variables to lower prop count
@@ -53,6 +56,11 @@ export default function Simulator() {
         setFunction: setYear,
     };
 
+    const factorListStates = {
+        setValue: checkedList,
+        setFunction: setCheckedList,
+    }
+
     // Storing states for all sliders in a list for easy access in other components
     const allSliderStates = [
         // Variables sliders
@@ -67,7 +75,7 @@ export default function Simulator() {
     return (
         <>
             <Navbar />
-            <Sidebar sliderStates={allSliderStates} onApply={callCountriesData} />
+            <Sidebar sliderStates={allSliderStates} onApply={callCountriesData} factorListStates={factorListStates} />
             <View sliderStates={allSliderStates} countriesData={countriesData} />
         </>
     );
