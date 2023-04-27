@@ -12,7 +12,7 @@ function View({ sliderStates, countriesData }) {
             </div>
             <div className="timescale">
                 <p>{sliderStates[sliderStates.length - 1].setValue}</p>
-                <Slider sliderState={sliderStates[sliderStates.length - 1]} minRange={2023} maxRange={2050} />
+                <Slider sliderState={sliderStates[sliderStates.length - 1]} minRange={2023} maxRange={2100} />
             </div>
         </div>
     );
