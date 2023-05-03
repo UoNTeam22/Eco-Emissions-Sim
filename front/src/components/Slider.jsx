@@ -6,6 +6,9 @@ function Slider({ sliderState, minRange, maxRange, step }) {
         sliderState.setFunction(Number(event.target.value));
     }
 
+    let value = sliderState.setValue;
+    let percent = ((value - minRange) / (maxRange - minRange)) * 100;
+
     return (
         <div>
             <input
@@ -15,6 +18,7 @@ function Slider({ sliderState, minRange, maxRange, step }) {
                 value={sliderState.setValue}
                 step={step}
                 onChange={updateSetFunction}
+                style={{ backgroundSize: `${percent}% 100%` }}
             />
         </div>
     );
