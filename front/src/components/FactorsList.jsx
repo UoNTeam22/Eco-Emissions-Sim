@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Slider from "./Slider.jsx";
 import "../styles/Slider.css";
 import "../styles/FactorsList.css";
+import InfoButton from "./InfoButton.jsx";
 
 // FactorLists component to keep track of selected factors.
 function FactorsList({ sliderStates, factorListStates }) {
@@ -45,6 +46,7 @@ function FactorsList({ sliderStates, factorListStates }) {
                         </div>
                         <div className="slider">
                             <Slider sliderState={sliderState} minRange={item.start} maxRange={item.end} step={item.step} />
+                            <InfoButton text = {"Move the slider to change the values"}></InfoButton>
                         </div>
                     </div>
                 );
