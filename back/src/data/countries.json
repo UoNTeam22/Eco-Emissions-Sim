@@ -240,8 +240,8 @@
         "code": "SLV"
     },
     {
-        "name": "Rep. of Equatorial Guinea",
-        "code": "GIN"
+        "name": "Equatorial Guinea",
+        "code": "GNQ"
     },
     {
         "name": "The State of Eritrea",
@@ -736,8 +736,8 @@
         "code": "ZAF"
     },
     {
-        "name": "Rep. of South Sudan",
-        "code": "SDN"
+        "name": "South Sudan",
+        "code": "SSD"
     },
     {
         "name": "Spain",
@@ -893,7 +893,7 @@
     },
     {
         "name": "World",
-        "code": null
+        "code": "WORLD"
     },
     {
         "name": "Rep. of Yemen",
