@@ -15,7 +15,7 @@ function Slider({ sliderState, minRange, maxRange, step }) {
                 type="range"
                 min={minRange}
                 max={maxRange}
-                value={sliderState.setValue}
+                value={value}
                 step={step}
                 onChange={updateSetFunction}
                 style={{ backgroundSize: `${percent}% 100%` }}
