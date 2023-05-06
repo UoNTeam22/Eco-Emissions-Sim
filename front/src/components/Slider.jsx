@@ -10,7 +10,7 @@ function Slider({ sliderState, minRange, maxRange, step }) {
     let percent = ((value - minRange) / (maxRange - minRange)) * 100;
 
     return (
-        <div>
+        <div class="slider-container">
             <input
                 type="range"
                 min={minRange}
