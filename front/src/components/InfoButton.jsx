@@ -1,4 +1,5 @@
 import React, {  useState } from 'react';
+import { CiCircleInfo } from "react-icons/ci";
 import '../styles/InfoButton.css';
 
 const InfoButton = ({text}) => {
@@ -9,7 +10,7 @@ const InfoButton = ({text}) => {
             onMouseEnter = {() => setIsVisible(true)}
             onMouseLeave={() => setIsVisible(false)}
         >
-        <h1>placeholder</h1> 
+        <CiCircleInfo />
         {isVisible && <div className='toolkit-text'>{text}</div>}
         </div>
     );
