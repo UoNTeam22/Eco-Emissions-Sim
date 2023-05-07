@@ -1,7 +1,11 @@
 import React from "react";
 import "../styles/ColourKey.css";
 
-// ColourKey component used to create map keys.
+/**
+ * ColourKey component used to create map keys.
+ * @param {KeyItem} keyItems
+ * @returns 
+ */
 function ColourKey({ keyItems }) {
     return (
         <div className="all-keys">

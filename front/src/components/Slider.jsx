@@ -1,4 +1,11 @@
-// Slider component to create factor sliders with different ranges.
+/**
+ * Slider component to create factor sliders with different ranges.
+ * @param {*} sliderState
+ * @param {*} minRange
+ * @param {*} maxRange
+ * @param {*} step 
+ * @returns 
+ */
 function Slider({ sliderState, minRange, maxRange, step }) {
     
     // Sets slider value using its state.

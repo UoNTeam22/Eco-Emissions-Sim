@@ -3,7 +3,12 @@ import TemperatureMap from "./TemperatureMap.jsx";
 import Slider from "./Slider.jsx";
 import "../styles/View.css";
 
-// View component containing Temperature Map and timescale slider.
+/**
+ * View component containing Temperature Map and timescale slider.
+ * @param {*} sliderStates
+ * @param {*} countriesData
+ * @returns 
+ */
 function View({ sliderStates, countriesData }) {
     return (
         <div className="view">

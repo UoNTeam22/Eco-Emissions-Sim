@@ -1,7 +1,10 @@
 import React from "react";
 import "../styles/Navbar.css";
 
-// Navbar component containing 
+/**
+ * Navbar component containing 
+ * @returns 
+ */
 function Navbar() {
     return (
         <div className="navbar">
