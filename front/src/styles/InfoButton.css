@@ -7,11 +7,11 @@
 .toolkit-text {
     position: absolute;
     top: calc(-100% - 5px);
-    transform: translateX(-20%);
+    transform: translateX(-100%);
     background-color: black;
     color: white;
     padding: 7px;
-    min-width: 100px;
+    min-width: 200px;
     margin-right: 3px;
     z-index: 1;
     border-radius: 4px;

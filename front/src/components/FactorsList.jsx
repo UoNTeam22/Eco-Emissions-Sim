@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "./Slider.jsx";
 import "../styles/Slider.css";
 import "../styles/FactorsList.css";
@@ -46,7 +46,7 @@ function FactorsList({ sliderStates, factorListStates }) {
                         </div>
                         <div className="slider">
                             <Slider sliderState={sliderState} minRange={item.start} maxRange={item.end} step={item.step} />
-                            <InfoButton text = {"Move the slider to change the values"}></InfoButton>
+                            <InfoButton text = {"Move the " + item.name + " slider to change the values."}></InfoButton>
                         </div>
                     </div>
                 );

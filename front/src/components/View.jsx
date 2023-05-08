@@ -14,7 +14,7 @@ function View({ sliderStates, countriesData }) {
             <div className="timescale">
                 <p>{sliderStates[sliderStates.length - 1].setValue}</p>
                 <Slider sliderState={sliderStates[sliderStates.length - 1]} minRange={2023} maxRange={2100} />
-                <InfoButton text = {"Move the slider to change the value"}></InfoButton>
+                <InfoButton text = {"Move the timescale slider to change the year."}></InfoButton>
             </div>
         </div>
     );
