@@ -4,7 +4,12 @@ import Slider from "./Slider.jsx";
 import "../styles/View.css";
 import InfoButton from "./InfoButton.jsx";
 
-// View component containing Temperature Map and timescale slider.
+/**
+ * View component containing Temperature Map and timescale slider.
+ * @param {*} sliderStates
+ * @param {*} countriesData
+ * @returns 
+ */
 function View({ sliderStates, countriesData }) {
     return (
         <div className="view">

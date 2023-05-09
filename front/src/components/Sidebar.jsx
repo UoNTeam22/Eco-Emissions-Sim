@@ -2,7 +2,12 @@ import React from "react";
 import FactorsList from "./FactorsList.jsx";
 import "../styles/Sidebar.css";
 
-// Sidebar component containing Factors list and Apply button.
+/**
+ * Sidebar component containing Factors list and Apply button.
+ * @param {*} sliderStates
+ * @param {*} onApply 
+ * @returns 
+ */
 function Sidebar({ sliderStates, onApply, factorListStates }) {
     return (
         <div className="sidebar">

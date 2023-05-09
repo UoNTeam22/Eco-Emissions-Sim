@@ -4,17 +4,26 @@ import "../styles/Slider.css";
 import "../styles/FactorsList.css";
 import InfoButton from "./InfoButton.jsx";
 
-// FactorLists component to keep track of selected factors.
+/**
+ * FactorLists component to keep track of selected factors.
+ * @param {BigInteger} sliderStates 
+ * @returns 
+ */
 function FactorsList({ sliderStates, factorListStates }) {
-
-    // Fators list with start, end and step values for each factor.
-    // Used to create slider for each factor.
+  
+    /**
+     * Fators list with start, end and step values for each factor.
+     * Used to create slider for each factor.
+     */
     const factors = [
         { id: 1, name: "Fossil Fuels", value: 0, start: -100, end: 100, step: 20, units: "%" },
         { id: 2, name: "Vegetarianism", value: 0, start: 0, end: 7, step: 1, units: "days" },
     ];
 
-    // Maintains list of selected factors.
+    /**
+     * Maintains list of selected factors.
+     * @param {*} event 
+     */
     const selected = (event) => {
         const value = event.target.value;
         const isChecked = event.target.checked;
@@ -29,7 +38,9 @@ function FactorsList({ sliderStates, factorListStates }) {
         }
     };
 
-    // Mapping factors list to create silders.
+    /**
+     * Mapping factors list to create silders.
+     */
     return (
         <div className="card-body">
             {factors.map((item, index) => {

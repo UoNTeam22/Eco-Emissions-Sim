@@ -3,7 +3,11 @@ import { MapContainer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "../styles/Map.css";
 
-// Map component
+/**
+ * Map component
+ * @param {*} countries 
+ * @returns 
+ */
 function Map({ countries }) {
     // Reference to map.
     const geoJson = useRef(null);

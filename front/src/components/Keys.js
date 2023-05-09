@@ -1,4 +1,6 @@
-// Class to create key items with a tile, colour and ranges.
+/**
+ * Class to create key items with a tile, colour and ranges.
+ */
 class KeyItem {
     constructor(title, color, bounds) {
         this.title = title;

@@ -5,6 +5,11 @@ import Navbar from "./Navbar.jsx";
 import View from "./View.jsx";
 import TemperatureDataFactory from "./TemperatureDataFactory.js";
 
+/**
+ * Main component containing all other components.
+ * Sets up states for all sliders and year.
+ * @returns 
+ */
 export default function Simulator() {
     // Create states for factor sliders
 
