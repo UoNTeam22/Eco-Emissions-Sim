@@ -8,11 +8,11 @@ import "../styles/Sidebar.css";
  * @param {*} onApply 
  * @returns 
  */
-function Sidebar({ sliderStates, onApply }) {
+function Sidebar({ sliderStates, onApply, factorListStates }) {
     return (
         <div className="sidebar">
             <div className="body">
-                <FactorsList sliderStates={sliderStates} />
+                <FactorsList sliderStates={sliderStates} factorListStates={factorListStates}/>
                 <div className="overlay">
                     <button className="button" onClick={onApply}>Apply</button>
                 </div>

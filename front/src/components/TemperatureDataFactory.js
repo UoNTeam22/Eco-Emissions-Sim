@@ -11,19 +11,19 @@ class TemperatureDataFactory {
     mapCountries = countries.features;
 
     // Loading map data from the models for a selected year.
-    load(setState, year) {
+    load(setState, year, checkedList, sliderStates) {
         this.setState = setState;
         ClientModel.getModels().then(async models => {
             for (let model of models) {
                 let yearResults = await model.getResults({ "time": year });
                 //console.log(yearResults);
-                this.#processTemperatureData(yearResults);
+                this.#processTemperatureData(yearResults, checkedList, sliderStates);
             }
         });
     };
 
     // Processing map data according to country ISO code.
-    #processTemperatureData(temperatureCountries) {
+    #processTemperatureData(temperatureCountries, checkedList, sliderStates) {
         for (let i = 0; i < this.mapCountries.length; i++) {
             const country = this.mapCountries[i];
             const temperatureCountry = temperatureCountries.find(
@@ -33,6 +33,15 @@ class TemperatureDataFactory {
                 let temperature = Number(temperatureCountry.value);
                 country.properties.temperature = temperature;
             }
+            checkedList.forEach(factor => {
+                if(factor === "Fossil Fuels" && sliderStates[0].setValue !== 0) {
+                    console.log("Considering ff");
+                    country.properties.temperature += (0.03039 * sliderStates[0].setValue) + 0.06905;
+                } else if(factor === "Vegetarianism" && sliderStates[1].setValue !== 0) {
+                    console.log("Considering veg");
+                    country.properties.temperature *= (-0.05292 * sliderStates[1].setValue) + 1;
+                }
+            });
             this.#setCountryColor(country);
         }
         // Setting state once all countries are assigned a color according to their temperature & the key.

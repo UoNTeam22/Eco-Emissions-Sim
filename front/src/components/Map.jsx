@@ -22,9 +22,20 @@ function Map({ countries }) {
     // Binds country name and its temperature to a country.
     const onEachCountry = (country, layer) => {
         layer.options.fillColor = country.properties.color;
-        const name = country.properties.ADMIN;
-        const temperature = country.properties.temperature;
-        layer.bindPopup(`${name}: ${Number.parseFloat(temperature).toFixed(2)}°C`);
+        let name = country.properties.ADMIN;
+        let temperature = country.properties.temperature;
+
+        // Check if the temperature is NaN
+        if (!temperature) {
+            layer.bindPopup(`${name}: No data`);
+            return;
+        }
+
+        // Fix it to 2 decimal places.
+        temperature = Number.parseFloat(temperature).toFixed(2)
+
+        // Bind the popup to the country.
+        layer.bindPopup(`${name}: ${temperature}°C`);
     };
 
     // Loads until all country data is processed.

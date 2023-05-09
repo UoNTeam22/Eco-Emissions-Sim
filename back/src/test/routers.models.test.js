@@ -145,6 +145,11 @@ describe('Models Router', () => {
                 if (result.code !== null) {
                     result.code.should.be.a('string');
                     allNull = false;
+                    
+                    // Special case is where the ISO code is set to WORLD
+                    if (result.code === 'WORLD') {
+                        continue;
+                    }
 
                     // Make sure it has 3 characters
                     result.code.should.have.lengthOf(3);
